@@ -1,0 +1,22 @@
+[
+    {
+      "title": "The Forest",
+      "author": "Valve",
+      "image": "path_to_image/image.png",
+      "tags": ["Horror", "Survival"],
+      "links": {
+        "amazon": "https://www.amazon.com/example",
+        "Trailer": "https://example.com/trailer"
+      }
+    },
+    {
+      "title": "///",
+      "author": "///",
+      "image": "path_to_image/another_image.png",
+      "tags": ["///", "///"],
+      "links": {
+        "amazon": "https://www.amazon.com////",
+        "audio": "https://example.com////"
+      }
+    }
+  ]
