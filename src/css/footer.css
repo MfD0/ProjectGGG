@@ -1,0 +1,205 @@
+:root {
+  --dark-blue: #11131F;
+  --light-dark-blue: #1F212D;
+  --light-green: #93ABAE;
+  --gray: #BEC7C2;
+  --alternative-gray: #A1B5BA;
+  --light: #F6F5EF;
+}
+
+/* Основні стилі футера */
+.footer-logo {
+  color: var(--light); /* Використовуємо світлий колір */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.42px;
+  display: inline-block;
+}
+
+.footer-logo:hover, .footer-logo:focus {
+  color: var(--gray);
+}
+
+.footer-svg-logo {
+  display: flex;
+  align-items: center; /* Вирівнюємо іконку і текст по вертикалі */
+  gap: 8px; /* Відстань між іконкою та текстом */
+}
+
+.jacht-icon {
+  width: 30px; /* Збільшена ширина */
+  height: 30px; /* Збільшена висота */
+}
+
+/* Меню */
+.footer-menu {
+  color: var(--light); /* Світлий колір для тексту */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.18;
+  letter-spacing: 0.42px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-menu:hover, .footer-menu:focus {
+  color: var(--gray);
+}
+
+.footer-social-networks {
+  color: var(--light); /* Світлий текст */
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.footer-social-media {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-social-link {
+  display: inline-block;
+  width: 40px;  /* Розмір іконок */
+  height: 40px; /* Висота і ширина повинні відповідати розмірам іконок */
+}
+
+.social-icon {
+  width: 50%;
+  height: 50%;
+  object-fit: contain; /* Це допоможе зберегти пропорції іконок */
+}
+
+/* Іконки соцмереж */
+.footer-social-link:hover, .footer-social-link:focus {
+  border-color: var(--light-green);
+}
+
+.footer-icons-social {
+  fill: var(--light); /* Білий колір для іконок */
+  width: 32px;
+  height: 32px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-social-link:hover .footer-icons-social,
+.footer-social-link:focus .footer-icons-social {
+  fill: var(--light-green);
+}
+
+/* Текстові стилі */
+.footer-text {
+  color: rgba(246, 245, 239, 0.9); /* Легкий відтінок для контрасту */
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.18;
+  letter-spacing: 0.36px;
+}
+
+/* Вирівнювання та контейнери */
+.footer-container {
+  border-top: 1px solid var(--light);
+  position: relative;
+  padding-top: 41px;
+  padding-bottom: 20px;
+  background-color: var(--dark-blue); /* Темний фон для футера */
+}
+
+.footer-year {
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+/* Адаптивність для більших екранів */
+@media only screen and (min-width: 768px) {
+  .footer-svg-logo {
+    margin-bottom: 0;
+  }
+
+  .conection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+
+  .footer-social-media {
+    justify-content: flex-start;
+  }
+
+  .footer-year {
+    margin-bottom: 16px;
+    gap: 32px;
+  }
+
+  .footer-social-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .footer-icons-social {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* Адаптивність для великих екранів (1280px+) */
+@media only screen and (min-width: 1280px) {
+  .footer-block-menu {
+    display: flex;
+    gap: 24px;
+    justify-content: flex-start; /* Переміщує меню лівіше */
+    margin-right: 80px; /* Можна змінювати значення для бажаної відстані */
+  }
+  
+  .footer-about {
+    margin-bottom: 0;
+  }
+
+  .footer-svg-logo {
+    margin-right: 130px;
+  }
+
+  .footer-year {
+    margin-top: 100px;
+  }
+}
+
+/* Блюрний ефект */
+.footer-blur {
+  width: 420px;
+  height: 420px;
+  transform: rotate(-45.408deg);
+  flex-shrink: 0;
+  border-radius: 420px;
+  opacity: 0.6;
+  background: var(--light-green); /* Використовуємо зелено-сірий відтінок */
+  filter: blur(100px);
+  top: 80%;
+  position: absolute;
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer-blur {
+    width: 419px;
+    height: 419px;
+    left: 30%;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .footer-blur {
+    width: 415px;
+    height: 415px;
+    left: 20%;
+  }
+}
