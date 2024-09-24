@@ -1,0 +1,113 @@
+:root {
+    --dark-bg: #11131F;
+    /* Темний фон */
+    --dark-text: #F6F5EF;
+    /* Світлий текст */
+    --accent-color: #BEC7C2;
+    /* Основний акцентний колір */
+}
+
+
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 64px;
+    padding: 18px 20px;
+    background: var(--dark-bg);
+    /* Темний фон для хедера */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0px 0px 8px 8px;
+    border: 1.5px solid #555558;
+    /* Бордюр згідно з палітрою */
+    position: relative;
+    z-index: 21;
+}
+
+.logo-box {
+    height: 28px;
+}
+
+.header-logo-link {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.icon-logo {
+    height: 32px;
+    /* Або інша висота */
+    width: auto;
+    vertical-align: middle;
+}
+
+.nav-list-home-item .home,
+.nav-list-shopping-item .shopping-list {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-text);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    line-height: 32px;
+    /* Вирівнювання по висоті */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.logo-text {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--dark-text);
+    margin-left: 8px;
+    align-self: center;
+}
+
+.nav-list-home-item .home:hover,
+.nav-list-shopping-item .shopping-list:hover {
+    background-color: var(--accent-color);
+    /* Ефект при наведенні */
+    transform: translateY(-3px);
+}
+
+/* Адаптив для мобільних пристроїв */
+@media screen and (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        height: 72px;
+        padding-left: 32px;
+        padding-right: 32px;
+    }
+}
+
+@media screen and (min-width: 1158px) {
+    header {
+        height: 72px;
+        padding-left: 24px;
+        padding-right: 24px;
+    }
+
+    .header-left {
+        gap: 76px;
+    }
+
+    .nav-list {
+        gap: 24px;
+    }
+}
+
