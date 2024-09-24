@@ -7,11 +7,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Game Vault</title>
   <script type="module" crossorigin src="/vanilla-app-template/index.js"></script>
-  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-BE24Cirx.css">
+  <link rel="stylesheet" crossorigin href="/vanilla-app-template/assets/index-DvuiJJOQ.css">
 </head>
 
 <body>
-  
+  <div class="header-left"></div>
+    <div class="logo-box">
+        <a href="./index.html" class="header-logo-link">
+            <svg class="icon-logo" width="109" height="28">
+                <use href="/img/sprite.svg#icon-logo"></use>
+            </svg>
+        </a>
+    </div>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li class="nav-list-home-item nav-bar-active">
+                <a href="./index.html" class="home">HOME</a>
+            </li>
+            <li class="nav-list-shopping-item">
+                <a href="./shoping-list.html" class="shopping-list">SHOPPING LIST
+                    <svg class="icon-shopping-list" width="14" height="20">
+                        <use href="./img/sprite.svg#icon-shoping-list"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </nav>
+</div>
+
+<div class="header-right">
+    <div id="theme-switcher">
+        <input type="checkbox" id="theme-toggle" />
+        <label for="theme-toggle" id="theme-toggle-label"></label>
+    </div>
+    <button class="menu-toggle" onclick="openMobileWindow()">
+        <svg class="icon-burger-menu" width="28" height="28">
+            <use xlink:href="/img/sprite.svg#icon-align-left1"></use>
+        </svg>
+        <svg class="icon-close iconHide" width="28" height="28">
+            <use xlink:href="/img/sprite.svg#icon-x-close"></use>
+        </svg>
+    </button>
+</div>
 
   <main>
     <!-- Loads the specified .html file -->
