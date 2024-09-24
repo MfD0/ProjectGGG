@@ -10,13 +10,74 @@
       }
     },
     {
-      "title": "///",
-      "author": "///",
+      "title": "Assassin's Creed",
+      "author": "Ubisoft",
       "image": "path_to_image/another_image.png",
       "tags": ["///", "///"],
       "links": {
         "amazon": "https://www.amazon.com////",
-        "audio": "https://example.com////"
+        "trailer": "https://example.com////"
       }
-    }
+    },
+    {
+      "title": "Assassin's Creed II",
+      "author": "Ubisoft",
+      "image": "",
+      "tags": ["",""],
+      "links": {
+        "amazon": "", 
+        "Trailer": ""
+      }
+    },
+    {
+      "title": "Assassin's Creed Brotherhood",
+      "author": "Ubisoft",
+      "image": "",
+      "tags": ["",""],
+      "links": {
+        "amazon": "", 
+        "Trailer": ""
+      }
+    },
+    {
+      "title": "Assassin's Creed Revelations",
+      "author": "Ubisoft",
+      "image": "",
+      "tags": ["",""],
+      "links": {
+        "amazon": "", 
+        "Trailer": ""
+     }
+    },
+    {
+      "title": "Assassin's Creed III",
+      "author": "Ubisoft",
+      "image": "",
+      "tags": ["",""],
+      "links": {
+        "amazon": "", 
+        "Trailer": ""
+     }
+    },
+    {
+      "title": "Assassin's Creed IV",
+      "author": "Ubisoft",
+      "image": "",
+      "tags": ["",""],
+      "links": {
+        "amazon": "", 
+        "Trailer": ""
+     }
+    },
+    {
+      "title": "Assassin's Creed Unity",
+      "author": "Ubisoft",
+      "image": "",
+      "tags": ["",""],
+      "links": {
+        "amazon": "", 
+        "Trailer": ""
+     }
+    },
+
   ]
