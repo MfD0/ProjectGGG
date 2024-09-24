@@ -1,28 +1,29 @@
+:root {
+    --dark-bg: #11131F;
+    /* Темний фон */
+    --dark-text: #F6F5EF;
+    /* Світлий текст */
+    --accent-color: #BEC7C2;
+    /* Основний акцентний колір */
+}
+
+
+
+
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 64px;
     padding: 18px 20px;
-    background: var(--white);
-    box-shadow: 0 2px 4px var(--header-box-shadow);
+    background: var(--dark-bg);
+    /* Темний фон для хедера */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 0px 0px 8px 8px;
-    border: 1.5px solid var(--black);
+    border: 1.5px solid #555558;
+    /* Бордюр згідно з палітрою */
     position: relative;
     z-index: 21;
-}
-
-.header-left {
-    display: flex;
-    align-items: center;
-    gap: 40px;
-}
-
-.header-right {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 14px;
 }
 
 .logo-box {
@@ -34,126 +35,48 @@ header {
     align-items: center;
 }
 
-.header-logo-icon {
-    margin-right: 8px;
-}
-
 .nav-list {
     display: flex;
     align-items: center;
-    gap: 16px;
+    gap: 24px;
 }
 
-.nav-bar-active {
-    border-radius: 36px;
-    background: var(--yellow);
+.icon-logo {
+    height: 32px;
+    /* Або інша висота */
+    width: auto;
+    vertical-align: middle;
 }
 
-.nav-bar-active:focus,
-.nav-bar-active:hover {
-    transform: translateY(-3px);
-}
-
-.nav-list-shopping-item.nav-bar-active .shopping-list {
-    padding: 2.3px 12px;
-}
-
-.nav-list-home-item.nav-bar-active .home {
+.nav-list-home-item .home,
+.nav-list-shopping-item .shopping-list {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-text);
+    text-decoration: none;
     padding: 8px 16px;
+    border-radius: 8px;
+    line-height: 32px;
+    /* Вирівнювання по висоті */
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-
-
-.home {
-    font-size: 14px;
-    font-style: normal;
+.logo-text {
+    font-size: 18px;
     font-weight: 500;
-    line-height: 18px;
-    /* 128.571% */
-    letter-spacing: -0.56px;
+    color: var(--dark-text);
+    margin-left: 8px;
+    align-self: center;
 }
 
-.home:hover,
-.home:focus {
+.nav-list-home-item .home:hover,
+.nav-list-shopping-item .shopping-list:hover {
+    background-color: var(--accent-color);
+    /* Ефект при наведенні */
     transform: translateY(-3px);
 }
 
-.shopping-list {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 4px;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 18px;
-    letter-spacing: -0.56px;
-}
-
-.icon-shopping-list {
-    margin-left: 3px;
-}
-
-.shopping-list:hover,
-.shopping-list:focus {
-    transform: translateY(-3px);
-}
-
-#theme-switcher {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-#theme-toggle {
-    display: none;
-}
-
-#theme-toggle-label {
-    display: inline-block;
-    width: 40px;
-    height: 20px;
-    background: #ddd;
-    border-radius: 20px;
-    position: relative;
-    cursor: pointer;
-    background-image: var(--theme-switcher-white);
-    box-shadow: 1px 1px 2px 0px var(--header-box-shadow) inset;
-}
-
-#theme-toggle-label::after {
-    content: '';
-    position: absolute;
-    top: 2px;
-    left: 2px;
-    width: 16px;
-    height: 16px;
-    background: #fff;
-    border-radius: 50%;
-    transition: transform 0.3s;
-}
-
-#theme-toggle:checked+#theme-toggle-label::after {
-    transform: translateX(20px);
-}
-
-.menu-toggle {
-    display: none;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-.icon-burger-menu {
-    stroke: #111;
-}
-
-.icon-burger-menu:hover,
-.icon-burger-menu:focus {
-    stroke: var(--category-btn-hover);
-}
-
-
+/* Адаптив для мобільних пристроїв */
 @media screen and (max-width: 768px) {
     .navbar {
         display: none;
@@ -188,49 +111,3 @@ header {
     }
 }
 
-/* themes ////////////////////////*/
-
-.light-theme {
-    /*  */
-}
-
-.light-theme #theme-toggle-label {
-    background-image: var(--theme-switcher-white);
-}
-
-.dark-theme {
-    background-color: var(--dark-bg-cl);
-    color: #ffffff;
-}
-
-.dark-theme header {
-    background-color: var(--black);
-    box-shadow: 0 2px 4px var(--header-bax-shadow-white);
-    border-color: var(--logo-text-dark);
-    color: var(--logo-text-dark);
-}
-
-.dark-theme .nav-bar-active {
-    color: var(--black);
-}
-
-.dark-theme #theme-toggle-label {
-    background-image: var(--theme-switcher-dark);
-}
-
-.dark-theme .icon-logo {
-    fill: var(--logo-text-dark);
-}
-
-.dark-theme .icon-burger-menu,
-.dark-theme .icon-close {
-    stroke: var(--logo-text-dark);
-}
-
-.dark-theme .icon-shopping-list {
-    fill: var(--logo-text-dark);
-}
-
-.dark-theme .nav-bar-active .icon-shopping-list {
-    fill: var(--black);
-}
