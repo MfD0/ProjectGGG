@@ -1,17 +1,17 @@
-import books from '../database/database.json' assert { type: 'json' };
+import game from '../database/database.json' assert { type: 'json' };
 
 
-function getBookByTitle(title, books) {
-    return books.find(book => book.title.toLowerCase() === title.toLowerCase()) || "Book not found";
+function getGameByID(id, game) {
+    return game.find(game => game.id === id) || "Game not found";
 }
 
-function getBooksByCategory(category, books) {
-    return books.filter(book => book.tags.includes(category)) || "No books found for this category";
+function getGameByCategory(category, game) {
+    return game.filter(game => game.tags.includes(category)) || "No Game found for this category";
 }
 
-function getAllCategories(books) {
+function getAllCategories(game) {
     const categories = new Set();  // Set автоматично усуває дублікати
-    books.forEach(book => book.tags.forEach(tag => categories.add(tag)));
+    game.forEach(game => game.tags.forEach(tag => categories.add(tag)));
     return Array.from(categories);
 }
 
@@ -19,8 +19,8 @@ function getAllCategories(books) {
 
 
 // Використання функцій
-console.log(getBookByTitle("Assassin's Creed", books));
+console.log(getGameByID("1", game));
 
-console.log(getBooksByCategory("Action", books));
+console.log(getGameByCategory("Action", game));
 
-console.log(getAllCategories(books));
+console.log(getAllCategories(game));
