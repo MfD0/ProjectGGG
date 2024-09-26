@@ -9,11 +9,13 @@ function getGameByCategory(category, game) {
     return game.filter(game => game.tags.includes(category)) || "No Game found for this category";
 }
 
-function getAllCategories(game) {
-    const categories = new Set();  // Set автоматично усуває дублікати
-    game.forEach(game => game.tags.forEach(tag => categories.add(tag)));
-    return Array.from(categories);
+// Функція для отримання всіх унікальних категорій з бази даних
+export function getAllCategories() {
+  const categories = new Set();  // Використовуємо Set для унікальності
+  game.forEach(game => game.tags.forEach(tag => categories.add(tag)));  // Додаємо всі теги
+  return Array.from(categories);  // Повертаємо масив унікальних категорій
 }
+
 
 
 
