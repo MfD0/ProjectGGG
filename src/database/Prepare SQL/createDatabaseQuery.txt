@@ -1,0 +1,34 @@
+-- Таблиця тегів
+CREATE TABLE tags (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(50) UNIQUE NOT NULL
+);
+
+-- Таблиця ігор
+CREATE TABLE games (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255),
+    image VARCHAR(255),
+    description TEXT,
+    discount VARCHAR(10) DEFAULT '0%'
+);
+
+-- Таблиця зв'язків між іграми та тегами
+CREATE TABLE game_tags (
+    game_id INT,
+    tag_id INT,
+    FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE,
+    FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE,
+    PRIMARY KEY (game_id, tag_id)
+);
+
+-- Таблиця посилань
+CREATE TABLE links (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    game_id INT,
+    steam_link VARCHAR(255),
+    trailer_link VARCHAR(255),
+    FOREIGN KEY (game_id) REFERENCES games(id) ON DELETE CASCADE
+);
+
