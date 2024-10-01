@@ -5,8 +5,10 @@ const scrollTopButton = document.getElementById("scrollTopButton");
 window.onscroll = function () {
   if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
     scrollTopButton.classList.add("active");
+    console.log("scroll button is active now");
   } else {
     scrollTopButton.classList.remove("active");
+    console.log("scroll button is not active now");
   }
 };
 
