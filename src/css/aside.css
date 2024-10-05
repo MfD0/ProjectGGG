@@ -10,9 +10,10 @@ main {
   background-color: #1F212D;
   border-radius: 8px;
   padding: 20px;
+  padding-left: 30px;
   width: 300px;
   max-height: calc(100vh - 80px);
-  margin: 30px 0;
+  margin: 30px 20px;
   overflow-y: auto;
   box-shadow: 0 4px 12px rgba(17, 19, 31, 0.4);
 }
