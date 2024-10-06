@@ -7,9 +7,6 @@
     /* Основний акцентний колір */
 }
 
-
-
-
 header {
     display: flex;
     justify-content: space-between;
@@ -76,6 +73,14 @@ header {
     transform: translateY(-3px);
 }
 
+/* Стан активної сторінки */
+.nav-list-home-item .home.active,
+.nav-list-shopping-item .shopping-list.active {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    transform: none;
+}
+
 /* Адаптив для мобільних пристроїв */
 @media screen and (max-width: 768px) {
     .navbar {
@@ -110,4 +115,3 @@ header {
         gap: 24px;
     }
 }
-
