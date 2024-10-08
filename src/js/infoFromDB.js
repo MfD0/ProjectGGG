@@ -1,11 +1,11 @@
 import game from '../database/database.json' assert { type: 'json' };
 
 
-function getGameByID(id, game) {
+function getGameByID(id) {
   return game.find(game => game.id === id) || "Game not found";
 }
 
-function getGameByCategory(category, game) {
+function getGameByCategory(category) {
   return game.filter(game => game.tags.includes(category)) || "No Game found for this category";
 }
 
@@ -25,24 +25,26 @@ function getAllGameTitles() {
 }
 
 //! Функція для вибору ігор по категоріях (по 5 ігор кожної категорії)
-export function getTopGamesByCategory(Allcategories) {
+function getBooksByTags(game, tags) {
+  // Об'єкт для зберігання результату по кожній категорії
+  const booksByTags = {};
 
-  const gameList = getAllGameTitles();
-  
-  const categories = new Set(Allcategories); // Використовуємо Set для унікальності
-  const result = []; // Масив для збереження результату
+  // Проходимо по кожній категорії з переданого списку
+  tags.forEach(tag => {
+    // Фільтруємо книги, які мають поточний тег (tag)
+    const booksForTag = game.filter(book => book.tags.includes(tag));
 
-
-  // Проходимо по кожній категорії
-  categories.forEach(category => {
-    const gamesInCategory = gameList.filter(game => game.tags && game.tags.includes(category)); // Фільтруємо ігри по категорії
-
-    const topGames = gamesInCategory.slice(0, 5); // Беремо тільки перші 5 ігор
-    result.push({
-      category, // Назва категорії
-      games: topGames // Список топ-5 ігор для категорії
-    });
+    // Зберігаємо не більше 5 книг для кожної категорії
+    booksByTags[tag] = booksForTag.slice(0, 5);
   });
 
-  return result; // Повертаємо масив об'єктів {category, games}
+  // Повертаємо результат
+  return booksByTags;
 }
+
+// Приклад використання
+const data = [/* JSON дані про книги */];
+const tags = ["Action", "Adventure", "RPG", "Horror"];
+
+const result = getBooksByTags(game, tags);
+console.log(result);
