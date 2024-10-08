@@ -19,3 +19,7 @@ if (categories.length > 0) {
   emptyMessage.textContent = "No categories available";
   categoriesList.appendChild(emptyMessage);
 }
+
+
+
+
