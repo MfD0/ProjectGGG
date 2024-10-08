@@ -3,7 +3,7 @@
     "id": "1",
     "title": "The Forest",
     "author": "Valve",
-    "image": "/blob/main/src/img/games_images/TheForest.png",
+    "image": "./img/games_images/TheForest.png",
     "tags": [
       "Horror",
       "Survival"
