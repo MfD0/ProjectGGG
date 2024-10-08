@@ -25,7 +25,7 @@ function getAllGameTitles() {
 }
 
 //! Функція для вибору ігор по категоріях (по 5 ігор кожної категорії)
-function getBooksByTags(game, tags) {
+export function getBooksByTags(tags) {
   // Об'єкт для зберігання результату по кожній категорії
   const booksByTags = {};
 
@@ -42,9 +42,3 @@ function getBooksByTags(game, tags) {
   return booksByTags;
 }
 
-// Приклад використання
-const data = [/* JSON дані про книги */];
-const tags = ["Action", "Adventure", "RPG", "Horror"];
-
-const result = getBooksByTags(game, tags);
-console.log(result);
