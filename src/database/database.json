@@ -3,7 +3,7 @@
     "id": "1",
     "title": "The Forest",
     "author": "Valve",
-    "image": " src/img/games_images/TheForest.png",
+    "image": "./src/img/games_images/TheForest.png",
     "tags": [
       "Horror",
       "Survival"
@@ -19,7 +19,7 @@
     "id": "2",
     "title": "Assassin's Creed",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_1.png",
+    "image": "ProjectGGG/src/img/games_images/AC_1.png",
     "tags": [
       "Action",
       "Adventure"
