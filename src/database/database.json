@@ -3,7 +3,7 @@
     "id": "1",
     "title": "The Forest",
     "author": "Valve",
-    "image": "src/img/games_images/TheForest.png",
+    "image": "../img/games_images/TheForest.png",
     "tags": [
       "Horror",
       "Survival"
@@ -19,7 +19,7 @@
     "id": "2",
     "title": "Assassin's Creed",
     "author": "Ubisoft",
-    "image": "src/img/games_images/AC_1.png",
+    "image": "../img/games_images/AC_1.png",
     "tags": [
       "Action",
       "Adventure"
@@ -35,7 +35,7 @@
     "id": "3",
     "title": "Assassin's Creed II",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_2.png",
+    "image": "../img/games_images/AC_2.png",
     "tags": [
       "Action",
       "Adventure"
@@ -51,7 +51,7 @@
     "id": "4",
     "title": "Assassin's Creed Brotherhood",
     "author": "Ubisoft",
-    "image": " img/games_images/AC2_1.png",
+    "image": "../img/games_images/AC2_1.png",
     "tags": [
       "Action",
       "Adventure"
@@ -67,7 +67,7 @@
     "id": "5",
     "title": "Assassin's Creed Revelations",
     "author": "Ubisoft",
-    "image": " img/games_images/AC2_2.png",
+    "image": "../img/games_images/AC2_2.png",
     "tags": [
       "Action",
       "Adventure"
@@ -83,7 +83,7 @@
     "id": "6",
     "title": "Assassin's Creed III",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_3.png",
+    "image": "../img/games_images/AC_3.png",
     "tags": [
       "Action",
       "Adventure"
@@ -99,7 +99,7 @@
     "id": "7",
     "title": "Assassin's Creed IV: Black Flag",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_4.png",
+    "image": "../img/games_images/AC_4.png",
     "tags": [
       "Action",
       "Adventure"
@@ -115,7 +115,7 @@
     "id": "8",
     "title": "Assassin's Creed Rogue",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_Rogue.png",
+    "image": "../img/games_images/AC_Rogue.png",
     "tags": [
       "Action",
       "Adventure"
@@ -131,7 +131,7 @@
     "id": "9",
     "title": "Assassin's Creed Unity",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_5.png",
+    "image": "../img/games_images/AC_5.png",
     "tags": [
       "Action",
       "Adventure"
@@ -147,7 +147,7 @@
     "id": "10",
     "title": "Assassin's Creed Syndicate",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_6.png",
+    "image": "../img/games_images/AC_6.png",
     "tags": [
       "Action",
       "Adventure"
@@ -163,7 +163,7 @@
     "id": "11",
     "title": "Assassin's Creed Origins",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_7.png",
+    "image": "../img/games_images/AC_7.png",
     "tags": [
       "Action",
       "Adventure"
@@ -179,7 +179,7 @@
     "id": "12",
     "title": "Assassin's Creed Odyssey",
     "author": "Ubisoft",
-    "image": " img/games_images/AC_8.png",
+    "image": "../img/games_images/AC_8.png",
     "tags": [
       "Action",
       "Adventure"
@@ -195,7 +195,7 @@
     "id": "13",
     "title": "The Witcher: Enhanced Edition Director's Cut",
     "author": "CD Project Red",
-    "image": " img/games_images/TheWitcher.png",
+    "image": "../img/games_images/TheWitcher.png",
     "tags": [
       "RPG",
       "Fantasy",
@@ -212,7 +212,7 @@
     "id": "14",
     "title": "The Witcher 2: Assassins of Kings",
     "author": "CD Project Red",
-    "image": " img/games_images/TheWitcher2.png",
+    "image": "../img/games_images/TheWitcher2.png",
     "tags": [
       "RPG",
       "Fantasy",
@@ -229,7 +229,7 @@
     "id": "15",
     "title": "The Witcher 3: Wild Hunt",
     "author": "CD Projekt Red",
-    "image": " img/games_images/TheWitcher3.png",
+    "image": "../img/games_images/TheWitcher3.png",
     "tags": [
       "RPG",
       "Fantasy",
@@ -247,7 +247,7 @@
     "id": "16",
     "title": "Grand Theft Auto V",
     "author": "Rockstar Games",
-    "image": " img/games_images/GTAV.png",
+    "image": "../img/games_images/GTAV.png",
     "tags": [
       "Action-Adventure",
       "Open World"
