@@ -16,15 +16,18 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     function resetCategories() {
-        // Показати всі блоки категорій
-        document.querySelectorAll(".game-category").forEach((category) => {
-            category.style.display = "block";
-        });
+    
+
         // Встановити заголовок за замовчуванням
         mainTitle.innerHTML = "Most Popular Games";
-        // Видалити клас category-active
+
+        // Видалити клас category-active, щоб стилі для карток не застосовувалися
         topGamesList.classList.remove("category-active");
-        // Перевірити та активувати кнопку "All Categories"
+
+        // Очистити список карток, щоб видалити всі додані ігри
+        //topGamesList.innerHTML = "";
+
+        // Активувати кнопку "All Categories" і зняти активний стиль з інших
         checkAndActivateAllCategories();
     }
 

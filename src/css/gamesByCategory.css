@@ -30,9 +30,10 @@
 }
 
 .top-games-list.category-active .gameByCategory-img {
-    width: 100%;
+    width: 80%;
     height: auto;
     border-radius: 8px;
+    margin: auto;
 }
 
 .top-games-list.category-active .game-category-title {
