@@ -6,6 +6,13 @@ const categories = getAllCategories();
 // Знаходимо контейнер для списку категорій
 const categoriesList = document.querySelector('.categories-list');
 
+//Додаємо all categoriеs
+const categoryItem = document.createElement('li');
+categoryItem.classList.add('category-item');
+categoryItem.textContent = "All Categories";
+categoriesList.appendChild(categoryItem);
+
+
 // Додаємо категорії у список
 if (categories.length > 0) {
   categories.forEach(category => {

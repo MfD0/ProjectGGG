@@ -19,8 +19,8 @@ main {
 }
 
 .all-categories-button {
-  background-color: #BEC7C2;
-  color: #1F212D;
+  background-color: #1F212D;
+  color: #F6F5EF;
   border: none;
   border-radius: 6px;
   padding: 10px;
@@ -74,6 +74,11 @@ main {
 
 .aside-container::-webkit-scrollbar-track {
   background: #1F212D;
+}
+
+.active-category {
+  background-color: #93ABAE;
+  color: #F6F5EF;
 }
 
 @media screen and (min-width: 768px) {

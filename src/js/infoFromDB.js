@@ -42,3 +42,8 @@ export function getBooksByTags(tags) {
   return booksByTags;
 }
 
+
+//! Функція для отримання всіх ігор за заданою категорією
+export function getGamesByCategory(category) {
+  return game.filter(game => game.tags.includes(category)) || "No Game found for this category";
+}

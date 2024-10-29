@@ -56,7 +56,6 @@ export function fetchAndDisplayGames() {
 
 // Функція для створення HTML контейнера категорії
 function createCategoryContainer(categoryName) {
-    console.log("createCategoryContainer");
     const container = document.createElement('div');
     container.className = 'game-category';
     container.setAttribute('data-category', categoryName);
@@ -101,7 +100,6 @@ function scrollFuc() {
 // Функція для отримання категорій та додавання контейнерів до DOM
 export function fetchAndDisplayCategories() {
     const topGamesList = document.querySelector('.top-games-list');
-    console.log("fetchAndDisplayCategories");
 
     // Припускаємо, що змінна `categories` вже існує і містить масив категорій
     categories.forEach(category => {
