@@ -82,7 +82,8 @@ function createCategoryContainer(categoryName) {
     booksDiv.appendChild(ul);
 
     const button = document.createElement('button');
-    button.id = categoryName.replace(/\s+/g, '_');
+    // Встановлюємо ID, значенням якого буде назва категорії без пробілів
+    button.id = `see-more-${categoryName.replace(/\s+/g, '_').toLowerCase()}`;
     button.classList.add('see-more');
     button.textContent = 'SEE MORE';
 
@@ -96,6 +97,7 @@ function createCategoryContainer(categoryName) {
 
     return container;
 }
+
 
 function scrollFuc() {
     window.scrollTo({ top: 0, behavior: 'smooth' });

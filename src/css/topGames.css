@@ -162,10 +162,11 @@
 }
 
 
-.topGamesTitle{
+.topGamesTitle {
     color: #F6F5EF;
+    margin-bottom: 10px;
 }
 
-.titleSpan{
+.titleSpan {
     color: var(--alternative-gray);
 }
