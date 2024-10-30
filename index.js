@@ -1,4 +1,4 @@
-import{g as f,a as C,b as E,c as S}from"./assets/main-DFTquRxD.js";const u=document.getElementById("scrollTopButton");window.onscroll=function(){document.body.scrollTop>300||document.documentElement.scrollTop>300?u.classList.add("active"):u.classList.remove("active")};u.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};const v=f();function k(e){return`
+import{g as f,a as C,b as E,c as S}from"./assets/main-CB7QSACH.js";const u=document.getElementById("scrollTopButton");window.onscroll=function(){document.body.scrollTop>300||document.documentElement.scrollTop>300?u.classList.add("active"):u.classList.remove("active")};u.onclick=function(){window.scrollTo({top:0,behavior:"smooth"})};const v=f();function k(e){return`
     <li id="${e.id}" class="listener" onclick="openModal('${e.id}')">
         <div class="game-category-card">
             <div class="overlay-div">
