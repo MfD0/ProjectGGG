@@ -285,7 +285,9 @@
     "tags": [
         "Sandbox",
         "Survival",
-        "Adventure"
+        "Adventure",
+        "Multiplayer",
+        "Co-op"
     ],
     "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. Players can gather resources, craft items, and create structures, all while surviving against various creatures. With its open-ended gameplay, Minecraft encourages creativity and collaboration, making it a beloved title for players of all ages.",
     "links": {
@@ -436,7 +438,9 @@
     "tags": [
       "Survival",
       "Open World",
-      "Zombie"
+      "Zombie",
+      "Multiplayer",
+      "Co-op"
     ],
     "description": "Project Zomboid is an open-world survival horror game set in a post-apocalyptic world overrun by zombies. Players must scavenge for food, build shelters, and fend off zombie hordes while managing their character's health and mental state. The game features a detailed crafting system, realistic survival mechanics, and a sandbox environment for players to explore.",
     "links": {
@@ -451,9 +455,9 @@
     "author": "Red Barrels",
     "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Outlast.png",
     "tags": [
-      "Survival Horror",
-      "First-Person",
-      "Stealth"
+      "Survival",
+      "Stealth",
+      "Horror"
     ],
     "description": "Outlast is a first-person survival horror game where players take on the role of investigative journalist Miles Upshur, who explores the abandoned Mount Massive Asylum. Equipped only with a camcorder, players must navigate the terrifying environment, avoid dangerous inmates, and uncover the dark secrets hidden within the asylum.",
     "links": {
@@ -468,9 +472,9 @@
     "author": "Red Barrels",
     "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Outlast2.png",
     "tags": [
-      "Survival Horror",
-      "First-Person",
-      "Stealth"
+      "Survival",
+      "Stealth",
+      "Horror"
     ],
     "description": "Outlast 2 is a first-person survival horror game that takes players to the Arizona desert, where they follow the story of journalist Blake Langermann. He investigates the mysterious death of a pregnant woman and uncovers a terrifying cult. Players must use stealth and resourcefulness to survive against the nightmarish forces that threaten them.",
     "links": {
@@ -551,7 +555,7 @@
     "id": "34",
     "title": "Call of Duty: World at War",
     "author": "Treyarch",
-    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/CODWAW.png",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/CODWAT.png",
     "tags": [
       "Action",
       "Shooter",
