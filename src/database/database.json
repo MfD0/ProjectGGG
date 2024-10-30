@@ -258,5 +258,23 @@
       "Trailer": "https://www.youtube.com/watch?v=QkkoHAzjnUs"
     },
     "discount": "0%"
+  },
+  {
+    "id": "17",
+    "title": "Phasmophobia",
+    "author": "Kinetic Games",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Phasmophobia.png",
+    "tags": [
+      "Horror",
+      "Co-op",
+      "Survival"
+    ],
+    "description": "Phasmophobia is a co-op horror game where players become ghost hunters tasked with investigating haunted locations to gather evidence of paranormal activity. Working together in teams of up to four, players use various ghost-hunting tools, communicate with spirits, and navigate eerie environments. With an emphasis on realism and immersive gameplay, Phasmophobia delivers a chilling, unpredictable experience as players encounter terrifying ghostly phenomena.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/739630/Phasmophobia/",
+      "Trailer": "https://www.youtube.com/watch?v=sRa9oeo5KiY"
+    },
+    "discount": "0%"
   }
+  
 ]
