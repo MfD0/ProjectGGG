@@ -542,7 +542,8 @@
     "tags": [
       "Action",
       "Shooter",
-      "Military"
+      "Military",
+      "War"
     ],
     "description": "Call of Duty 4: Modern Warfare is a first-person shooter that revolutionized the series with its modern setting and intense narrative. Players engage in various military operations around the globe, featuring an engaging single-player campaign and a robust multiplayer mode that set a new standard for online gameplay.",
     "links": {
@@ -560,7 +561,7 @@
       "Action",
       "Shooter",
       "Military",
-      "World War II"
+      "War"
     ],
     "description": "Call of Duty: World at War is a first-person shooter that returns to the gritty battles of World War II. Players can experience the Pacific and Eastern Fronts, fighting alongside allies and against fierce enemies. The game also introduced the popular Zombies mode, providing a cooperative multiplayer experience.",
     "links": {
@@ -578,7 +579,7 @@
       "Action",
       "Shooter",
       "Military",
-      "Modern Warfare"
+      "War"
     ],
     "description": "Call of Duty: Modern Warfare 2 is a first-person shooter that continues the story of the Modern Warfare series. Players engage in intense battles across various locations, utilizing advanced weaponry and tactics. The game features a gripping single-player campaign and robust multiplayer modes, solidifying its status as a classic in the genre.",
     "links": {
@@ -596,7 +597,7 @@
       "Action",
       "Shooter",
       "Military",
-      "Cold War"
+      "War"
     ],
     "description": "Call of Duty: Black Ops is a first-person shooter that explores covert operations during the Cold War. Players take on the role of special forces operatives, engaging in high-stakes missions across diverse locations. The game features a thrilling campaign, competitive multiplayer modes, and the introduction of the Zombies mode.",
     "links": {
@@ -605,7 +606,4 @@
     },
     "discount": "0%"
   }
-  
-  
-
 ]
