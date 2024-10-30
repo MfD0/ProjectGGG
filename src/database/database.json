@@ -258,5 +258,174 @@
       "Trailer": "https://www.youtube.com/watch?v=QkkoHAzjnUs"
     },
     "discount": "0%"
+  },
+  {
+    "id": "17",
+    "title": "Phasmophobia",
+    "author": "Kinetic Games",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Phasmophobia.png",
+    "tags": [
+      "Horror",
+      "Co-op",
+      "Survival"
+    ],
+    "description": "Phasmophobia is a co-op horror game where players become ghost hunters tasked with investigating haunted locations to gather evidence of paranormal activity. Working together in teams of up to four, players use various ghost-hunting tools, communicate with spirits, and navigate eerie environments. With an emphasis on realism and immersive gameplay, Phasmophobia delivers a chilling, unpredictable experience as players encounter terrifying ghostly phenomena.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/739630/Phasmophobia/",
+      "Trailer": "https://www.youtube.com/watch?v=sRa9oeo5KiY"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "18",
+    "title": "Minecraft",
+    "author": "Mojang Studios",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Minecraft.png",
+    "tags": [
+        "Sandbox",
+        "Survival",
+        "Adventure"
+    ],
+    "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. Players can gather resources, craft items, and create structures, all while surviving against various creatures. With its open-ended gameplay, Minecraft encourages creativity and collaboration, making it a beloved title for players of all ages.",
+    "links": {
+        "minecraft": "https://www.minecraft.net/en-us/store/minecraft-deluxe-collection-pc",
+        "trailer": "https://www.youtube.com/watch?v=MmB9b5njVbA"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "19",
+    "title": "Stardew Valley",
+    "author": "ConcernedApe",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/StardewWalley.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "RPG"
+    ],
+    "description": "Stardew Valley is a farming simulation game where players inherit a rundown farm and work to restore it to its former glory. Players can plant crops, raise animals, mine for resources, and engage with the local community. With charming pixel art and a relaxing soundtrack, Stardew Valley offers a rich and immersive experience filled with exploration and creativity.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+        "trailer": "https://www.youtube.com/watch?v=ot7uXNQskhs"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "20",
+    "title": "Farming Simulator 17",
+    "author": "Giants Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/FS17.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/447020/Farming_Simulator_17",
+        "trailer": "https://www.youtube.com/watch?v=8NLH5hgYBrs"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "21",
+    "title": "Farming Simulator 19",
+    "author": "Giants Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/FS19.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/787860/Farming_Simulator_19/",
+        "trailer": "https://www.youtube.com/watch?v=_JjRUHDb6kU"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "22",
+    "title": "Farming Simulator 22",
+    "author": "Giants Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/FS22.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/1248130/Farming_Simulator_22/",
+        "trailer": "https://www.youtube.com/watch?v=JpBzfTe_yWE"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "23",
+    "title": "Farming Simulator 25",
+    "author": "Giants Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/FS25.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/2300320/Farming_Simulator_25/",
+        "trailer": "https://www.youtube.com/watch?v=MxLO_PY_Mxc"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "24",
+    "title": "Resident Evil 2",
+    "author": "Capcom",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/ResidentEvil2.png",
+    "tags": [
+      "Horror",
+      "Survival"
+    ],
+    "description": "Resident Evil 2 is a survival horror game that immerses players in a zombie-infested Raccoon City. Control Leon S. Kennedy and Claire Redfield as they navigate the terrifying world filled with puzzles, danger, and memorable characters. The game combines thrilling gameplay with stunning visuals and a haunting atmosphere.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/883710/Resident_Evil_2/",
+      "Trailer": "https://www.youtube.com/watch?v=u3wS-Q2KBpk"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "25",
+    "title": "Cyberpunk 2077",
+    "author": "CD Projekt Red",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Cyberpunk2077.png",
+    "tags": [
+      "RPG",
+      "Open World",
+      "Sci-Fi"
+    ],
+    "description": "Cyberpunk 2077 is an open-world RPG set in the dystopian Night City. Players assume the role of V, a mercenary with a customizable character who explores the vibrant, dangerous streets of the city while pursuing a life-altering implant. With a richly detailed world, deep storytelling, and a vast array of choices, the game offers a unique blend of action and narrative.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+      "Trailer": "https://www.youtube.com/watch?v=DvVjkqB3LH0"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "26",
+    "title": "DOOM Eternal",
+    "author": "id Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/DOOMEternal.png",
+    "tags": [
+      "Action",
+      "FPS",
+      "Shooter"
+    ],
+    "description": "DOOM Eternal is a fast-paced first-person shooter that continues the story of the Doom Slayer in his battle against demonic forces. With intense combat mechanics, a variety of weapons, and exhilarating movement options, players experience an adrenaline-pumping adventure filled with brutal encounters and stylish kills.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/782330/DOOM_Eternal/",
+      "Trailer": "https://www.youtube.com/watch?v=_UuktemkCFI"
+    },
+    "discount": "0%"
   }
 ]
