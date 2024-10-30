@@ -249,8 +249,9 @@
     "author": "Rockstar Games",
     "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/GTAV.png",
     "tags": [
-      "Action-Adventure",
-      "Open World"
+      "Action",
+      "Open World",
+      "Adventure"
     ],
     "description": "Grand Theft Auto V offers an expansive open-world experience set in the sprawling city of Los Santos. Players switch between three protagonists—Michael, Franklin, and Trevor—as they engage in heists, navigate the criminal underworld, and explore a richly detailed world. With a mix of intense action, driving, and exploration, GTA V delivers a thrilling story alongside a robust online multiplayer mode.",
     "links": {
@@ -258,5 +259,349 @@
       "Trailer": "https://www.youtube.com/watch?v=QkkoHAzjnUs"
     },
     "discount": "0%"
+  },
+  {
+    "id": "17",
+    "title": "Phasmophobia",
+    "author": "Kinetic Games",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Phasmophobia.png",
+    "tags": [
+      "Horror",
+      "Co-op",
+      "Survival"
+    ],
+    "description": "Phasmophobia is a co-op horror game where players become ghost hunters tasked with investigating haunted locations to gather evidence of paranormal activity. Working together in teams of up to four, players use various ghost-hunting tools, communicate with spirits, and navigate eerie environments. With an emphasis on realism and immersive gameplay, Phasmophobia delivers a chilling, unpredictable experience as players encounter terrifying ghostly phenomena.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/739630/Phasmophobia/",
+      "Trailer": "https://www.youtube.com/watch?v=sRa9oeo5KiY"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "18",
+    "title": "Minecraft",
+    "author": "Mojang Studios",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Minecraft.png",
+    "tags": [
+        "Sandbox",
+        "Survival",
+        "Adventure"
+    ],
+    "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. Players can gather resources, craft items, and create structures, all while surviving against various creatures. With its open-ended gameplay, Minecraft encourages creativity and collaboration, making it a beloved title for players of all ages.",
+    "links": {
+        "minecraft": "https://www.minecraft.net/en-us/store/minecraft-deluxe-collection-pc",
+        "trailer": "https://www.youtube.com/watch?v=MmB9b5njVbA"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "19",
+    "title": "Stardew Valley",
+    "author": "ConcernedApe",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/StardewWalley.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "RPG"
+    ],
+    "description": "Stardew Valley is a farming simulation game where players inherit a rundown farm and work to restore it to its former glory. Players can plant crops, raise animals, mine for resources, and engage with the local community. With charming pixel art and a relaxing soundtrack, Stardew Valley offers a rich and immersive experience filled with exploration and creativity.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+        "trailer": "https://www.youtube.com/watch?v=ot7uXNQskhs"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "20",
+    "title": "Farming Simulator 17",
+    "author": "Giants Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/FS17.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/447020/Farming_Simulator_17",
+        "trailer": "https://www.youtube.com/watch?v=8NLH5hgYBrs"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "21",
+    "title": "Farming Simulator 19",
+    "author": "Giants Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/FS19.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/787860/Farming_Simulator_19/",
+        "trailer": "https://www.youtube.com/watch?v=_JjRUHDb6kU"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "22",
+    "title": "Farming Simulator 22",
+    "author": "Giants Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/FS22.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/1248130/Farming_Simulator_22/",
+        "trailer": "https://www.youtube.com/watch?v=JpBzfTe_yWE"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "23",
+    "title": "Farming Simulator 25",
+    "author": "Giants Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/FS25.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/2300320/Farming_Simulator_25/",
+        "trailer": "https://www.youtube.com/watch?v=MxLO_PY_Mxc"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "24",
+    "title": "Resident Evil 2",
+    "author": "Capcom",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/ResidentEvil2.png",
+    "tags": [
+      "Horror",
+      "Survival"
+    ],
+    "description": "Resident Evil 2 is a survival horror game that immerses players in a zombie-infested Raccoon City. Control Leon S. Kennedy and Claire Redfield as they navigate the terrifying world filled with puzzles, danger, and memorable characters. The game combines thrilling gameplay with stunning visuals and a haunting atmosphere.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/883710/Resident_Evil_2/",
+      "Trailer": "https://www.youtube.com/watch?v=u3wS-Q2KBpk"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "25",
+    "title": "Cyberpunk 2077",
+    "author": "CD Projekt Red",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Cyberpunk2077.png",
+    "tags": [
+      "RPG",
+      "Open World",
+      "Sci-Fi"
+    ],
+    "description": "Cyberpunk 2077 is an open-world RPG set in the dystopian Night City. Players assume the role of V, a mercenary with a customizable character who explores the vibrant, dangerous streets of the city while pursuing a life-altering implant. With a richly detailed world, deep storytelling, and a vast array of choices, the game offers a unique blend of action and narrative.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/1091500/Cyberpunk_2077/",
+      "Trailer": "https://www.youtube.com/watch?v=DvVjkqB3LH0"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "26",
+    "title": "DOOM Eternal",
+    "author": "id Software",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/DOOMEternal.png",
+    "tags": [
+      "Action",
+      "Shooter"
+    ],
+    "description": "DOOM Eternal is a fast-paced first-person shooter that continues the story of the Doom Slayer in his battle against demonic forces. With intense combat mechanics, a variety of weapons, and exhilarating movement options, players experience an adrenaline-pumping adventure filled with brutal encounters and stylish kills.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/782330/DOOM_Eternal/",
+      "Trailer": "https://www.youtube.com/watch?v=_UuktemkCFI"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "27",
+    "title": "Project Zomboid",
+    "author": "The Indie Stone",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/ProjectZomboid.png",
+    "tags": [
+      "Survival",
+      "Open World",
+      "Zombie"
+    ],
+    "description": "Project Zomboid is an open-world survival horror game set in a post-apocalyptic world overrun by zombies. Players must scavenge for food, build shelters, and fend off zombie hordes while managing their character's health and mental state. The game features a detailed crafting system, realistic survival mechanics, and a sandbox environment for players to explore.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/108600/Project_Zomboid/",
+      "Trailer": "https://www.youtube.com/watch?v=nPbsDmzZ3Oc"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "28",
+    "title": "Outlast",
+    "author": "Red Barrels",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Outlast.png",
+    "tags": [
+      "Survival Horror",
+      "First-Person",
+      "Stealth"
+    ],
+    "description": "Outlast is a first-person survival horror game where players take on the role of investigative journalist Miles Upshur, who explores the abandoned Mount Massive Asylum. Equipped only with a camcorder, players must navigate the terrifying environment, avoid dangerous inmates, and uncover the dark secrets hidden within the asylum.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/238320/Outlast/",
+      "Trailer": "https://www.youtube.com/watch?v=uKA-IA4locM"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "29",
+    "title": "Outlast 2",
+    "author": "Red Barrels",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Outlast2.png",
+    "tags": [
+      "Survival Horror",
+      "First-Person",
+      "Stealth"
+    ],
+    "description": "Outlast 2 is a first-person survival horror game that takes players to the Arizona desert, where they follow the story of journalist Blake Langermann. He investigates the mysterious death of a pregnant woman and uncovers a terrifying cult. Players must use stealth and resourcefulness to survive against the nightmarish forces that threaten them.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/414700/Outlast_2/",
+      "Trailer": "https://www.youtube.com/watch?v=W73XZ1WHuLQ"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "30",
+    "title": "Call of Duty",
+    "author": "Infinity Ward",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/COD2003.png",
+    "tags": [
+      "Action",
+      "Shooter",
+      "War"
+    ],
+    "description": "Call of Duty is a first-person shooter set during World War II. Players experience the war from the perspective of different soldiers, participating in various battles across Europe. The game is known for its immersive single-player campaign and engaging multiplayer modes.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/2620/Call_of_Duty_2003/",
+      "Trailer": "https://www.youtube.com/watch?v=ajTx5sUyXBg"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "31",
+    "title": "Call of Duty 2",
+    "author": "Infinity Ward",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/COD2.png",
+    "tags": [
+      "Action",
+      "Shooter",
+      "War"
+    ],
+    "description": "Call of Duty 2 is a first-person shooter that takes place during World War II. Players assume the roles of different soldiers from various countries, experiencing key battles in North Africa, Europe, and Russia. The game features improved graphics and gameplay mechanics compared to its predecessor, as well as a strong multiplayer component.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/2630/Call_of_Duty_2/",
+      "Trailer": "https://www.youtube.com/watch?v=K4eXjltawZ4"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "32",
+    "title": "Call of Duty 3",
+    "author": "Treyarch",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/COD3.png",
+    "tags": [
+      "Action",
+      "Shooter",
+      "War"
+    ],
+    "description": "Call of Duty 3 is a first-person shooter set during World War II, focusing on the events of the Battle of Normandy. Players take on the role of soldiers from multiple nations, experiencing various perspectives of the conflict. The game features a robust single-player campaign and improved multiplayer modes with vehicle gameplay.",
+    "links": {
+      "xbox": "https://www.xbox.com/games/store/call-of-duty-3/C2N2L6MHMV34",
+      "Trailer": "https://www.youtube.com/watch?v=Q2EQ3gpud5o"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "33",
+    "title": "Call of Duty 4: Modern Warfare",
+    "author": "Infinity Ward",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/COD4MW.png",
+    "tags": [
+      "Action",
+      "Shooter",
+      "Military"
+    ],
+    "description": "Call of Duty 4: Modern Warfare is a first-person shooter that revolutionized the series with its modern setting and intense narrative. Players engage in various military operations around the globe, featuring an engaging single-player campaign and a robust multiplayer mode that set a new standard for online gameplay.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/7940/Call_of_Duty_4_Modern_Warfare_2007/",
+      "Trailer": "https://www.youtube.com/watch?v=LhuIjNSg7Gg"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "34",
+    "title": "Call of Duty: World at War",
+    "author": "Treyarch",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/CODWAW.png",
+    "tags": [
+      "Action",
+      "Shooter",
+      "Military",
+      "World War II"
+    ],
+    "description": "Call of Duty: World at War is a first-person shooter that returns to the gritty battles of World War II. Players can experience the Pacific and Eastern Fronts, fighting alongside allies and against fierce enemies. The game also introduced the popular Zombies mode, providing a cooperative multiplayer experience.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/10090/Call_of_Duty_World_at_War/",
+      "Trailer": "https://www.youtube.com/watch?v=ondfCsioE0E"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "35",
+    "title": "Call of Duty: Modern Warfare 2",
+    "author": "Infinity Ward",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/CODMW2.png",
+    "tags": [
+      "Action",
+      "Shooter",
+      "Military",
+      "Modern Warfare"
+    ],
+    "description": "Call of Duty: Modern Warfare 2 is a first-person shooter that continues the story of the Modern Warfare series. Players engage in intense battles across various locations, utilizing advanced weaponry and tactics. The game features a gripping single-player campaign and robust multiplayer modes, solidifying its status as a classic in the genre.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/1962660/Call_of_Duty_Modern_Warfare_II/",
+      "Trailer": "https://www.youtube.com/watch?v=ztjfwecrY8E"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "34",
+    "title": "Call of Duty: Black Ops",
+    "author": "Treyarch",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/CODBO.png",
+    "tags": [
+      "Action",
+      "Shooter",
+      "Military",
+      "Cold War"
+    ],
+    "description": "Call of Duty: Black Ops is a first-person shooter that explores covert operations during the Cold War. Players take on the role of special forces operatives, engaging in high-stakes missions across diverse locations. The game features a thrilling campaign, competitive multiplayer modes, and the introduction of the Zombies mode.",
+    "links": {
+      "steam": "https://store.steampowered.com/app/42700/Call_of_Duty_Black_Ops/",
+      "Trailer": "https://www.youtube.com/watch?v=OPTOVQFRggI"
+    },
+    "discount": "0%"
   }
+  
+  
+
 ]
