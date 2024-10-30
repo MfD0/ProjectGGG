@@ -1,9 +1,10 @@
 import game from '../database/database.json' assert { type: 'json' };
 
 
-function getGameByID(id) {
+export function getGameByID(id) {
   return game.find(game => game.id === id) || "Game not found";
 }
+
 
 function getGameByCategory(category) {
   return game.filter(game => game.tags.includes(category)) || "No Game found for this category";

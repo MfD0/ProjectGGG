@@ -1,4 +1,4 @@
-import { getAllCategories, getBooksByTags } from './infoFromDB.js';
+import { getAllCategories, getBooksByTags, getGameByID } from './infoFromDB.js';
 
 // Витягаємо всі категорії з бази даних
 const categories = getAllCategories();
@@ -111,7 +111,7 @@ export function fetchAndDisplayCategories() {
 
 
 
-
+// !!!!!!!!!!!!!!!!!!!!1
 
 
 

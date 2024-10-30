@@ -119,6 +119,7 @@ export function fetchAndDisplayCategories() {
         .catch(error => console.error('Error loading books:', error));
 }
 
+
 // Виклик функції при завантаженні сторінки
 document.addEventListener('DOMContentLoaded', () => {
     fetchAndDisplayCategories();
