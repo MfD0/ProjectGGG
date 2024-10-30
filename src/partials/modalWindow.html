@@ -1,14 +1,18 @@
 <!-- Модальне вікно -->
-<div id="gameModal" class="modal">
-    <div class="modal-content">
-        <span class="close-button">&times;</span>
-        <h2 id="modalTitle"></h2>
-        <p id="modalAuthor"></p>
-        <img id="modalImage" src="" alt="" class="modal-image">
-        <p id="modalDescription"></p>
-        <div class="modal-links">
-            <a id="modalSteamLink" href="" target="_blank">View on Steam</a>
-            <a id="modalTrailerLink" href="" target="_blank">Watch Trailer</a>
+<div class="modal">
+    <div class="modal-body">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <img src="" alt="" class="game-cover">
+            <h2 class="game-title"></h2>
+            <p class="game-author"></p>
+            <p class="game-description"></p>
+            <div class="modal-links">
+                <a href="#" target="_blank" class="marketplace-logo steam">View on Steam</a>
+                <a href="#" target="_blank" class="marketplace-logo trailer">Watch Trailer</a>
+            </div>
+            <button class="add-to-list">Add to shopping list</button>
+            <p class="under-btn-text" style="display: none;">Already in your shopping list</p>
         </div>
     </div>
 </div>
