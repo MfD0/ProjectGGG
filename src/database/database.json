@@ -275,6 +275,58 @@
       "Trailer": "https://www.youtube.com/watch?v=sRa9oeo5KiY"
     },
     "discount": "0%"
+  },
+  {
+    "id": "18",
+    "title": "Minecraft",
+    "author": "Mojang Studios",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/Minecraft.png",
+    "tags": [
+        "Sandbox",
+        "Survival",
+        "Adventure"
+    ],
+    "description": "Minecraft is a sandbox game that allows players to build and explore virtual worlds made up of blocks. Players can gather resources, craft items, and create structures, all while surviving against various creatures. With its open-ended gameplay, Minecraft encourages creativity and collaboration, making it a beloved title for players of all ages.",
+    "links": {
+        "minecraft": "https://www.minecraft.net/en-us/store/minecraft-deluxe-collection-pc",
+        "trailer": "https://www.youtube.com/watch?v=MmB9b5njVbA"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "19",
+    "title": "Stardew Valley",
+    "author": "ConcernedApe",
+    "image": "https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/img/games_images/StardewWalley.png",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "RPG"
+    ],
+    "description": "Stardew Valley is a farming simulation game where players inherit a rundown farm and work to restore it to its former glory. Players can plant crops, raise animals, mine for resources, and engage with the local community. With charming pixel art and a relaxing soundtrack, Stardew Valley offers a rich and immersive experience filled with exploration and creativity.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/413150/Stardew_Valley/",
+        "trailer": "https://www.youtube.com/watch?v=ot7uXNQskhs"
+    },
+    "discount": "0%"
+  },
+  {
+    "id": "20",
+    "title": "Farming Simulator 22",
+    "author": "Giants Software",
+    "image": "https://cdn.akamai.steamstatic.com/steam/apps/1131020/header.jpg?t=1639099813",
+    "tags": [
+        "Simulation",
+        "Farming",
+        "Multiplayer"
+    ],
+    "description": "Farming Simulator 22 lets players experience the challenges of modern farming. Build and manage your own farm, grow crops, and raise animals using authentic machinery and tools from real-world manufacturers. With a variety of environments and seasons, players can explore a rich agricultural world and enjoy the intricacies of farm life, either solo or with friends in multiplayer mode.",
+    "links": {
+        "steam": "https://store.steampowered.com/app/1248130/Farming_Simulator_22/",
+        "trailer": "https://www.youtube.com/watch?v=CMl9m9K3WkU"
+    },
+    "discount": "20%"
   }
-  
+
+
 ]
