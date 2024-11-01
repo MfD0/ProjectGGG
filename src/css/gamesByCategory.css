@@ -1,10 +1,11 @@
 /* Стилі для списку карток, які активуються при виборі категорії */
 .top-games-list.category-active {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+    margin-right: 40px;
     gap: 20px;
     /* Відстань між картками */
-    padding: 20px;
+    padding-bottom: 20px;
     list-style-type: none;
 }
 
@@ -12,7 +13,6 @@
 .top-games-list.category-active .listener {
     flex: 1 1 calc(25% - 20px);
     /* Ширина картки, адаптивна для 4 в ряд */
-    max-width: 250px;
     box-sizing: border-box;
     background-color: #2b2b2b;
     border-radius: 8px;
@@ -58,6 +58,9 @@
 @media (max-width: 768px) {
     .top-games-list.category-active .listener {
         flex: 1 1 calc(50% - 20px);
+    }
+    .top-games-list.category-active {
+        margin-left: 40px;
     }
 }
 

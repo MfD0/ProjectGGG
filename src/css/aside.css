@@ -1,8 +1,6 @@
 main {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
+  display: grid;
+  grid-template-columns: 2fr 5fr;
   gap: 20px;
 }
 
@@ -11,7 +9,7 @@ main {
   border-radius: 8px;
   padding: 20px;
   padding-left: 30px;
-  width: 300px;
+  min-width: 200px;
   max-height: calc(100vh - 80px);
   margin: 30px 20px;
   overflow-y: auto;
@@ -82,19 +80,16 @@ main {
 }
 
 @media screen and (max-width: 768px) {
-  .aside-container {
+  aside {
     display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
   }
 }
 
 @media screen and (min-width: 768px) {
   .aside-container {
     max-height: 500px;
-  }
-}
-
-@media screen and (min-width: 1024px) {
-  .aside-container {
-    width: 320px;
   }
 }
