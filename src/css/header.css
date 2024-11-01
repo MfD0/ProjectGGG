@@ -81,10 +81,16 @@ header {
     transform: none;
 }
 
+.hamburger-image {
+    display: none;
+    width: 40px;
+    cursor: pointer;
+}
+
 /* Адаптив для мобільних пристроїв */
 @media screen and (max-width: 768px) {
-    .navbar {
-        display: none;
+    .hamburger-image {
+        display: block;
     }
 
     .menu-toggle {
