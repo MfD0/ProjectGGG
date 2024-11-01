@@ -55,6 +55,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Додаємо клас category-active для стилів карток
                 topGamesList.classList.add("category-active");
+
+                // Додав перевірку на те, чи ширина екрану є малою (<= 768 пікселів),
+                // щоб ховати список категорій після його натиснення
+                if (window.innerWidth <= 768) {
+                    const aside = document.getElementsByTagName('aside')[0];
+                    aside.style.display = 'none';
+                }
             }
         });
     });
