@@ -30,20 +30,28 @@ function displayCategoriesList() {
 
 const aside = document.getElementsByTagName('aside')[0];
 
-// Спостереження за тим, чи відображається іконка меню ("сендвіч")
-// Якщо при розширенні екрану список категорій не відображено,
-// а іконка меню ("сендвіч") сщезла, то потрібно відобразити цей список
-const block = document.querySelector('.hamburger-image');
-const resizewatcher = new ResizeObserver(entries => {
+const hamburger = document.querySelector('.hamburger-image');
+hamburger.addEventListener('click', displayCategoriesList);
+
+// Перевірка, чи елемент 'aside' (список категорій) присутній на сторінці
+// Інакше, "сендвіч" не потрібно відображати
+if (aside != null) {
+    // Спостереження за тим, чи відображається іконка меню ("сендвіч")
+    // Якщо при розширенні екрану список категорій не відображено,
+    // а іконка меню ("сендвіч") сщезла, то потрібно відобразити цей список
+    const resizewatcher = new ResizeObserver(entries => {
     for (const entry of entries) {
         if (entry.contentRect.width == 0) {
-            aside.style.display = 'block';
+        aside.style.display = 'block';
         } else {
-            aside.style.display = 'none';
+        aside.style.display = 'none';
         }
-  }
-});
-resizewatcher.observe(block);
+    }
+    });
+    resizewatcher.observe(hamburger);
+} else {
+    hamburger.style.display = 'none';
+}
 
-const hamburger = document.querySelector(".hamburger-image");
-hamburger.addEventListener('click', displayCategoriesList);
+
+
