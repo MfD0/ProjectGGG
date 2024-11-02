@@ -117,6 +117,27 @@
   margin-top: 20px;
 }
 
+.footer-block-menu {
+  display: flex;
+  gap: 24px;
+  justify-content: flex-start; /* Переміщує меню лівіше */
+  flex-wrap: nowrap;
+}
+
+@media only screen and (max-width: 768px) {
+  .conection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-social-networks {
+    display: none;
+  }
+
+}
+
 /* Адаптивність для більших екранів */
 @media only screen and (min-width: 768px) {
   .footer-svg-logo {
@@ -153,19 +174,8 @@
 
 /* Адаптивність для великих екранів (1280px+) */
 @media only screen and (min-width: 1280px) {
-  .footer-block-menu {
-    display: flex;
-    gap: 24px;
-    justify-content: flex-start; /* Переміщує меню лівіше */
-    margin-right: 80px; /* Можна змінювати значення для бажаної відстані */
-  }
-  
   .footer-about {
     margin-bottom: 0;
-  }
-
-  .footer-svg-logo {
-    margin-right: 130px;
   }
 
   .footer-year {

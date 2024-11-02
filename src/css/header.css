@@ -81,10 +81,36 @@ header {
     transform: none;
 }
 
+.hamburger-image,
+.shopping-list-image,
+.home-image {
+    display: none;
+    width: 40px;
+    cursor: pointer;
+}
+
+
 /* Адаптив для мобільних пристроїв */
-@media screen and (max-width: 768px) {
-    .navbar {
+@media screen and (max-width: 600px) {
+    .home,
+    .shopping-list {
         display: none;
+    }
+
+    .home-image,
+    .shopping-list-image {
+        width: 25px;
+        display: block;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger-image {
+        display: block;
     }
 
     .menu-toggle {
