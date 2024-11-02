@@ -25,11 +25,13 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 300px;
     margin-top: 20px;
   }
   
   .empty-cart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
   }
   
@@ -43,3 +45,7 @@
     color: #BEC7C2;
   }
   
+  .shopping-list-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
