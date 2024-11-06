@@ -24,6 +24,97 @@ body {
   margin: 0;
   background-color: var(--dark-bg);
   overflow-x: hidden;
+  position: relative;
+}
+
+body .glow1, body .glow2, body .glow3, body .glow4, body .glow5,
+body .glow6, body .glow7, body .glow8, body .glow9, body .glow10, body .glow11 {
+  content: '';
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+  filter: blur(100px);
+  opacity: 0.6;
+  animation: blinkAnimation 7s infinite alternate;
+}
+
+/* Розташування кожного елемента */
+body .glow1 {
+  top: 5%;
+  left: 10%;
+}
+
+body .glow2 {
+  top: 15%;
+  right: 20%;
+}
+
+body .glow3 {
+  top: 30%;
+  left: 40%;
+}
+
+body .glow4 {
+  top: 50%;
+  right: 10%;
+}
+
+body .glow5 {
+  top: 60%;
+  left: 15%;
+}
+
+body .glow6 {
+  top: 70%;
+  right: 30%;
+}
+
+body .glow7 {
+  top: 80%;
+  left: 50%;
+}
+
+body .glow8 {
+  top: 90%;
+  right: 5%;
+}
+
+body .glow9 {
+  top: 40%;
+  left: 70%;
+}
+
+body .glow10 {
+  top: 20%;
+  right: 50%;
+}
+
+body .glow11 {
+  bottom: 5%;
+  left: 5%;
+}
+
+.glow-header-left {
+  content: '';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 150px;
+  height: 150px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.3), transparent);
+  filter: blur(80px);
+  opacity: 0.6;
+  z-index: 0;
+}
+
+@keyframes blinkAnimation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(100px, 100px);
+  }
 }
 
 main {
