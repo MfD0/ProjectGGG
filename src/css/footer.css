@@ -136,6 +136,11 @@
     display: none;
   }
 
+  .footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Адаптивність для більших екранів */
