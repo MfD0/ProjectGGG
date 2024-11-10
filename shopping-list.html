@@ -6,8 +6,9 @@
   <link rel="icon" type="image/svg+xml" href="/ProjectGGG/assets/controller-uaTl79Ef.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Shopping List - GameVault</title>
-  <script type="module" crossorigin src="/ProjectGGG/assets/main-Cq0vlRZr.js"></script>
-  <link rel="stylesheet" crossorigin href="/ProjectGGG/assets/main-tSu-FG5u.css">
+  <script type="module" crossorigin src="/ProjectGGG/shopping-list.js"></script>
+  <link rel="modulepreload" crossorigin href="/ProjectGGG/assets/main-BNourPAy.js">
+  <link rel="stylesheet" crossorigin href="/ProjectGGG/assets/main-Crs-b_DW.css">
   <link rel="stylesheet" crossorigin href="/ProjectGGG/assets/shopping-list-C-K6zey1.css">
 </head>
 
@@ -46,14 +47,16 @@
       <h1 class="shopping-list-title">Shopping <span class="highlight">List</span></h1>
     </div>
 
-    <section class="shopping-list-section">
-      <div class="shopping-list-content">
+    <section class="shopping-list-section shopping-list-container">
+      <div class="shopping-list-content" id="shopping-list-container">
+        <!-- Ігри з Local Storage будуть відображатися тут -->
         <div class="empty-cart">
           <img src="data:image/svg+xml,%3csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2024%2024'%20width='48'%20height='48'%20fill='none'%20stroke='%2393ABAE'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'%20class='feather%20feather-shopping-cart'%3e%3ccircle%20cx='9'%20cy='21'%20r='1'%3e%3c/circle%3e%3ccircle%20cx='20'%20cy='21'%20r='1'%3e%3c/circle%3e%3cpath%20d='M1%201h4l2.68%2013.39a2%202%200%200%200%202%201.61h9.72a2%202%200%200%200%202-1.61L23%206H6'%3e%3c/path%3e%3c/svg%3e" alt="Empty Cart" class="empty-cart-image">
           <p class="empty-cart-text">This page is empty, add some items and proceed to order.</p>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
