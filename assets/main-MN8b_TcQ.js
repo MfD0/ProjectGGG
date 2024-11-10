@@ -13,4 +13,4 @@ function f(e){return o.filter(t=>t.tags.includes(e))||"No Game found for this ca
             </div>
         </div>
     `,t}export{_ as a,f as b,G as c,g};
-//# sourceMappingURL=main-BNourPAy.js.map
+//# sourceMappingURL=main-MN8b_TcQ.js.map

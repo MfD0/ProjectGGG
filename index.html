@@ -9,8 +9,8 @@
   <base href="/ProjectGGG/">
 
   <script type="module" crossorigin src="/ProjectGGG/index.js"></script>
-  <link rel="modulepreload" crossorigin href="/ProjectGGG/assets/main-BNourPAy.js">
-  <link rel="stylesheet" crossorigin href="/ProjectGGG/assets/main-Crs-b_DW.css">
+  <link rel="modulepreload" crossorigin href="/ProjectGGG/assets/main-MN8b_TcQ.js">
+  <link rel="stylesheet" crossorigin href="/ProjectGGG/assets/main-D-55EtW1.css">
 </head>
 
 <body>
@@ -113,6 +113,31 @@
     </div>
 </div>
 
+    <!-- Модальне вікно "Feedback" -->
+<div class="modal">
+    <div class="modal-body">
+        <div class="modal-content">
+            <span class="modal-close">&times;</span>
+            <h2>Feedback</h2>
+            <br>
+            <p>We value your feedback. Please let us know your thoughts, suggestions, or issues you may have encountered.</p>
+            <form id="feedback-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <br>
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+    
   </main>
 
   <footer>
@@ -134,7 +159,7 @@
           <a class="footer-menu" href="#games-section">games</a>
         </li>
         <li class="footer-about">
-          <a class="footer-menu" href="#reviews-section">REVIEWS</a>
+          <a class="footer-menu" href="javascript:void(0)" onclick="openFeedbackWindow()">FEEDBACK</a>
         </li>
       </ul>
     </div>
@@ -164,7 +189,6 @@
     <li class="footer-text">Privacy Policy</li>
   </ul>
 </div>
-
   </footer>
 
   <!-- Додані більше елементів для бліків -->

@@ -1,4 +1,4 @@
-import"./assets/main-BNourPAy.js";document.addEventListener("DOMContentLoaded",function(){const n=document.querySelector("#shopping-list-container"),s=document.querySelector(".empty-cart");let e=JSON.parse(localStorage.getItem("shoppingList"))||[];e.length===0?s.style.display="block":(s.style.display="none",e.forEach((t,i)=>{const a=document.createElement("div");a.classList.add("game-card"),a.innerHTML=`
+import"./assets/main-MN8b_TcQ.js";document.addEventListener("DOMContentLoaded",function(){const n=document.querySelector("#shopping-list-container"),s=document.querySelector(".empty-cart");let e=JSON.parse(localStorage.getItem("shoppingList"))||[];e.length===0?s.style.display="block":(s.style.display="none",e.forEach((t,i)=>{const a=document.createElement("div");a.classList.add("game-card"),a.innerHTML=`
                 <div class="game-info">
                     <button class="remove-button" data-index="${i}">&times;</button>
                     <img src="${t.image}" alt="${t.title}" class="game-image">
