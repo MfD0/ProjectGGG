@@ -72,6 +72,11 @@
   width: 50%;
   height: 50%;
   object-fit: contain; /* Це допоможе зберегти пропорції іконок */
+  transition: filter 300ms;
+}
+
+.social-icon:hover {
+  filter: invert(0.6);
 }
 
 /* Іконки соцмереж */
@@ -122,6 +127,7 @@
   gap: 24px;
   justify-content: flex-start; /* Переміщує меню лівіше */
   flex-wrap: nowrap;
+  padding-left: 14px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -136,6 +142,11 @@
     display: none;
   }
 
+  .footer-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* Адаптивність для більших екранів */

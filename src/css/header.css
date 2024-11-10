@@ -87,8 +87,14 @@ header {
     display: none;
     width: 40px;
     cursor: pointer;
+    transition: filter 300ms;
 }
 
+.hamburger-image:hover,
+.shopping-list-image:hover,
+.home-image:hover {
+    filter: invert(0.6);
+}
 
 /* Адаптив для мобільних пристроїв */
 @media screen and (max-width: 600px) {

@@ -30,8 +30,6 @@
 }
 
 .top-games-list.category-active .gameByCategory-img {
-    width: 80%;
-    height: auto;
     border-radius: 8px;
     margin: auto;
 }
