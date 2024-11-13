@@ -1,5 +1,5 @@
 import { getAllCategories, getGamesByCategory } from './js/infoFromDB.js';
-
+console.log("main.js");
 // Витягаємо всі категорії з бази даних
 const categories = getAllCategories();
 
