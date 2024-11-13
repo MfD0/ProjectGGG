@@ -1,10 +1,11 @@
 document.addEventListener("DOMContentLoaded", function () {
+    console.log("shopping list js is connected");
     const shoppingListContainer = document.querySelector("#shopping-list-container");
     const emptyCartMessage = document.querySelector(".empty-cart");
 
     // Отримання даних з Local Storage
     let games = JSON.parse(localStorage.getItem("shoppingList")) || [];
-
+    console.log("data from local storage:", games);
     if (games.length === 0) {
         emptyCartMessage.style.display = "block"; // Показує повідомлення про порожній кошик
     } else {
@@ -42,3 +43,4 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 });
+
