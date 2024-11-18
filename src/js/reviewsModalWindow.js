@@ -1,7 +1,7 @@
 window.openReviewsWindow = openReviewsWindow;
 
 // Шукаємо модальне вікно "About"
-const modal = document.querySelectorAll('.modal')[1];
+const modal = document.querySelectorAll('.modal')[3];
 const backdrop = modal.querySelector('.modal-body');
 const closeModalButton = modal.querySelector('.modal-close');
 
