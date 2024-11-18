@@ -164,3 +164,35 @@
         opacity: 0;
     }
 }
+
+/* Стилі для модального вікна з відгуками */
+.modal-content.reviews-window {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 1fr);
+    gap: 15px;
+    max-width: 900px;
+}
+
+.reviews-window > h2 {
+    grid-column: 1 / 4;
+}
+
+.reviews-window > .review {
+    background-color: #1f2228;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.review > .avatar {
+    border-radius: 50%;
+    width: 75px;
+}
+
+.review > .stars {
+    color: orange;
+    font-size: 20px;
+}
