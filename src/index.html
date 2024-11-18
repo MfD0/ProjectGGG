@@ -1,72 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./img/controller.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Vault</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <base href="/ProjectGGG/" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="./img/controller.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Vault</title>
-  <link rel="stylesheet" href="./css/styles.css" />
-  <base href="/ProjectGGG/">
+  <body>
+    <header>
+      <load src="./partials/header.html" />
+    </header>
 
-</head>
+    <main>
+      <!-- Loads the specified .html file -->
 
-<body>
+      <aside>
+        <load src="./partials/aside.html" />
+      </aside>
 
-  <header>
-    <load src="./partials/header.html" />
-  </header>
+      <!-- Most Popular Games -->
+      <load src="./partials/topGames.html" />
 
-  <main>
-    <!-- Loads the specified .html file -->
+      <!-- Scroll to Top Button -->
+      <load src="./partials/scrolltop.html" />
 
-    <aside>
-      <load src="./partials/aside.html" />
-    </aside>
+      <load src="./partials/modalWindow.html" />
 
-    <!-- Most Popular Games -->
-    <load src="./partials/topGames.html" />
+      <load src="./partials/aboutModalWindow.html" />
 
+      <load src="./partials/feedbackModalWindow.html" />
 
-    <!-- Scroll to Top Button -->
-    <load src="./partials/scrolltop.html" />
+      <load src="./partials/reviewsModalWindow.html" />
+    </main>
 
-    <load src="./partials/modalWindow.html" />
+    <footer>
+      <load src="./partials/footer.html" />
+    </footer>
 
-    <load src="./partials/aboutModalWindow.html" />
+    <!-- Додані більше елементів для бліків -->
+    <div class="glow1"></div>
+    <div class="glow2"></div>
+    <div class="glow3"></div>
+    <div class="glow4"></div>
+    <div class="glow5"></div>
+    <div class="glow6"></div>
+    <div class="glow7"></div>
+    <div class="glow8"></div>
+    <div class="glow9"></div>
+    <div class="glow10"></div>
+    <div class="glow11"></div>
+    <div class="glow-header-left"></div>
 
-    <load src="./partials/feedbackModalWindow.html" />
-    
-  </main>
+    <script type="module" defer src="main.js"></script>
+    <script type="module" defer src="/js/infoFromDB.js"></script>
+    <script type="module" defer src="/js/scrolltop.js"></script>
+    <script type="module" defer src="/js/topGame.js"></script>
+    <script type="module" defer src="/js/categoryToggle.js"></script>
+    <script type="module" defer src="/js/modalWindow.js"></script>
+    <script type="module" defer src="/js/aboutModalWindow.js"></script>
+    <script type="module" defer src="/js/feedbackModalWindow.js"></script>
 
-  <footer>
-    <load src="./partials/footer.html" />
-  </footer>
-
-  <!-- Додані більше елементів для бліків -->
-  <div class="glow1"></div>
-  <div class="glow2"></div>
-  <div class="glow3"></div>
-  <div class="glow4"></div>
-  <div class="glow5"></div>
-  <div class="glow6"></div>
-  <div class="glow7"></div>
-  <div class="glow8"></div>
-  <div class="glow9"></div>
-  <div class="glow10"></div>
-  <div class="glow11"></div>
-  <div class="glow-header-left"></div>
-
-  <script type="module" defer src="main.js"></script>
-  <script type="module" defer src="/js/infoFromDB.js"></script>
-  <script type="module" defer src="/js/scrolltop.js"></script>
-  <script type="module" defer src="/js/topGame.js"></script>
-  <script type="module" defer src="/js/categoryToggle.js"></script>
-  <script type="module" defer src="/js/modalWindow.js"></script>
-  <script type="module" defer src="/js/aboutModalWindow.js"></script>
-  <script type="module" defer src="/js/feedbackModalWindow.js"></script>
-      
-  <script type="module" defer src="/js/shoppingList.js"></script>
-</body>
-
+    <script type="module" defer src="/js/shoppingList.js"></script>
+    <script type="module" defer src="/js/reviewsModalWindow.js"></script>
+  </body>
 </html>
