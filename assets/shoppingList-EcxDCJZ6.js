@@ -22,4 +22,4 @@ function f(e){return o.filter(t=>t.tags.includes(e))||"No Game found for this ca
                     </div>
                 </div>
             `,e.appendChild(r)})),e.addEventListener("click",function(i){if(i.target.classList.contains("remove-button")){const s=i.target.getAttribute("data-index");a.splice(s,1),localStorage.setItem("shoppingList",JSON.stringify(a)),i.target.closest(".game-card").remove(),a.length===0&&(t.style.display="block")}})});export{_ as a,f as b,G as c,u as g};
-//# sourceMappingURL=shoppingList-DEz0oaDc.js.map
+//# sourceMappingURL=shoppingList-EcxDCJZ6.js.map
