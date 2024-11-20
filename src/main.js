@@ -1,5 +1,17 @@
 import { getAllCategories, getGamesByCategory } from './js/infoFromDB.js';
+import GlowEffectsManager from './js/glow-effects.js';
+
 console.log("main.js");
+
+// Ініціалізуємо менеджер ефектів світіння
+const glowManager = new GlowEffectsManager({
+  glowSize: 200,
+  minDistance: 300,
+  effectsPerSection: 3,
+  sectionHeight: 1000,
+  containerSelector: 'body'
+});
+
 // Витягаємо всі категорії з бази даних
 const categories = getAllCategories();
 
@@ -41,7 +53,7 @@ if (categories.length > 0) {
 
 // Функція для відображення ігор за категорією
 function displayCategoryGames(categoryName) {
-  const games = getGamesByCategory(categoryName); // Отримуємо ігри для вибраної категорії
+  const games = getGamesByCategory(categoryName);
 
   // Оновлення заголовка на назву вибраної категорії
   mainTitle.innerHTML = `${categoryName} Games`;
@@ -62,11 +74,16 @@ function displayCategoryGames(categoryName) {
 
   // Додаємо клас category-active для стилів карток
   topGamesList.classList.add("category-active");
+
+  // Оновлюємо ефекти світіння після зміни контенту
+  setTimeout(() => {
+    glowManager.updateEffects();
+  }, 100);
 }
 
 // Функція для скидання до початкового стану ("All Categories")
 function resetCategories() {
-  location.reload()
+  location.reload();
 }
 
 // Функція для перевірки на активність "All Categories"
@@ -96,3 +113,16 @@ function createGameCard(game) {
     `;
   return li;
 }
+
+// Оновлюємо ефекти світіння при завантаженні сторінки
+window.addEventListener('load', () => {
+  glowManager.updateEffects();
+});
+
+// Оновлюємо ефекти при зміні розміру вікна
+window.addEventListener('resize', () => {
+  clearTimeout(window.resizeTimer);
+  window.resizeTimer = setTimeout(() => {
+    glowManager.updateEffects();
+  }, 250);
+});

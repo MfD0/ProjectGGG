@@ -3,10 +3,11 @@ import { getAllCategories, getBooksByTags, getGameByID } from './infoFromDB.js';
 // Витягаємо всі категорії з бази даних
 const categories = getAllCategories();
 
-// !!!!
+// Об'єкт, що містить всі ігри, розбиті за категоріями
+const topGames = getBooksByTags(categories);
+
 // Функція для створення HTML для карточки гри
 function createGameCard(game) {
-
     return `
     <li id="${game.id}" class="listener" onclick="openModal('${game.id}')">
         <div class="game-category-card">
@@ -40,8 +41,6 @@ function loadGames(categoryName, games) {
 }
 
 // Функція для отримання та відображення ігор по категоріям
-const topGames = getBooksByTags(categories);
-
 export function fetchAndDisplayGames() {
     // Перебираємо всі категорії у topGames
     Object.keys(topGames).forEach(categoryName => {
@@ -52,7 +51,6 @@ export function fetchAndDisplayGames() {
         loadGames(categoryName, games);
     });
 }
-
 
 // Функція для створення HTML контейнера категорії
 function createCategoryContainer(categoryName) {
@@ -78,7 +76,7 @@ function createCategoryContainer(categoryName) {
     gamesDiv.appendChild(ul);
 
     const button = document.createElement('button');
-    button.id = categoryName.replace(/\s+/g, '_');
+    button.id = categoryName.replace(/\s+/g, '_'); // Унікальний ID для кнопки
     button.classList.add('see-more');
     button.textContent = 'SEE MORE';
 
@@ -93,32 +91,47 @@ function createCategoryContainer(categoryName) {
     return container;
 }
 
-function scrollFuc() {
-    window.scrollTo({ top: 0, behavior: 'smooth' });
+// Функція для обробки кнопки "SEE MORE"
+function scrollFuc(event) {
+    const button = event.target; 
+    const categoryName = button.id.replace(/_/g, ' ');
+
+    // Знаходимо елемент у блоці Aside
+    const categoryItems = document.querySelectorAll('.category-item');
+    categoryItems.forEach(item => {
+        item.classList.remove('active-category');
+        if (item.textContent.trim() === categoryName.trim()) {
+            item.classList.add('active-category');
+        }
+    });
+
+    // Очищення glow-ефектів
+    const glowEffects = document.querySelectorAll('.glow-effect');
+    glowEffects.forEach(effect => effect.remove());
+
+    // Перезавантаження ігор
+    const games = topGames[categoryName];
+    loadGames(categoryName, games);
+
+    // Ініціалізація glow-ефектів заново
+    const glowManager = new GlowEffectsManager();
+    glowManager.updateEffects();
 }
+
 
 // Функція для отримання категорій та додавання контейнерів до DOM
 export function fetchAndDisplayCategories() {
     const topGamesList = document.querySelector('.top-games-list');
 
-    // Припускаємо, що змінна `categories` вже існує і містить масив категорій
+    // Додаємо контейнер для кожної категорії
     categories.forEach(category => {
         const categoryContainer = createCategoryContainer(category); // Використовуємо категорію напряму
         topGamesList.appendChild(categoryContainer);
     });
 }
 
-
-
-
-// !!!!!!!!!!!!!!!!!!!!1
-
-
-
-//! Виклик функції при завантаженні сторінки
+// Виклик функції при завантаженні сторінки
 document.addEventListener('DOMContentLoaded', () => {
     fetchAndDisplayCategories();
     fetchAndDisplayGames();
 });
-
-
