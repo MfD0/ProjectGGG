@@ -5,8 +5,8 @@ console.log("auth.js");
 // Авторизація
 document.getElementById("loginForm").addEventListener("submit", async (e) => {
     e.preventDefault();
-    const username = document.getElementById("loginUsername").value;
-    const password = document.getElementById("loginPassword").value;
+    const username = document.getElementById("username").value;
+    const password = document.getElementById("password").value;
 
     try {
         const users = await getUsers();
@@ -33,7 +33,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     try {
         await addUser({ username, password, cart: [] });
         alert("Успішна реєстрація!");
-        window.location.href = "/auth.html";
+        window.location.href = "auth.html";
     } catch (error) {
         console.error("Помилка реєстрації:", error);
     }
