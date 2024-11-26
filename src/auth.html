@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/auth.css" />
+
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="back-arrow" onclick="window.history.back();"></div>
+        <h1>Вхід до системи</h1>
+        <form id="loginForm">
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Увійти</button>
+        </form>
+        <p>Немає акаунта? <a href="register.html">Створити акаунт</a></p>
+    </div>
+
+    <script type="module" defer src="./js/auth.js"></script>
+</body>
+
+</html>

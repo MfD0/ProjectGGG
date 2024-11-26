@@ -1,46 +1,48 @@
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("shopping list js is connected");
-    const shoppingListContainer = document.querySelector("#shopping-list-container");
-    const emptyCartMessage = document.querySelector(".empty-cart");
+import { getUsers } from './api.js';
 
-    // Отримання даних з Local Storage
-    let games = JSON.parse(localStorage.getItem("shoppingList")) || [];
-    console.log("data from local storage:", games);
-    if (games.length === 0) {
-        emptyCartMessage.style.display = "block"; // Показує повідомлення про порожній кошик
-    } else {
-        emptyCartMessage.style.display = "none"; // Приховує повідомлення про порожній кошик
+document.addEventListener("DOMContentLoaded", async () => {
+    const activeUserId = localStorage.getItem("activeUser");
+    const blurOverlay = document.getElementById("blur-overlay");
+    const redirectLoginButton = document.getElementById("redirect-login");
 
-        games.forEach((game, index) => {
-            const gameCard = document.createElement("div");
-            gameCard.classList.add("game-card");
 
-            gameCard.innerHTML = `
-                <div class="game-info">
-                    <button class="remove-button" data-index="${index}">&times;</button>
-                    <img src="${game.image}" alt="${game.title}" class="game-image">
-                    <div class="game-details">
-                        <h3 class="game-title">${game.title}</h3>
-                        <p class="game-description">${game.description}</p>
-                    </div>
-                </div>
-            `;
 
-            shoppingListContainer.appendChild(gameCard);
+    if (!activeUserId) {
+        // Показуємо заблюрення сторінки
+        blurOverlay.classList.remove("hidden");
+
+        redirectLoginButton.addEventListener("click", () => {
+            window.location.href = "../auth.html";
         });
+    
+    } else {
+        // Ховаємо заблюрення, якщо користувач залогінений
+        blurOverlay.classList.add("hidden");
     }
 
-    // Обробник видалення гри зі списку без перезавантаження сторінки
-    shoppingListContainer.addEventListener("click", function (e) {
-        if (e.target.classList.contains("remove-button")) {
-            const index = e.target.getAttribute("data-index");
-            games.splice(index, 1);
-            localStorage.setItem("shoppingList", JSON.stringify(games));
-            e.target.closest(".game-card").remove(); // Видаляє елемент зі сторінки
-            if (games.length === 0) {
-                emptyCartMessage.style.display = "block"; // Показує повідомлення про порожній кошик
-            }
+    try {
+        const users = await getUsers();
+        const user = users.find((u) => u.id === parseInt(activeUserId));
+
+        if (user && user.cart.length > 0) {
+            renderShoppingList(user.cart);
+        } else {
+            document.getElementById("shoppingList").textContent = "Ваша корзина порожня.";
         }
-    });
+    } catch (error) {
+        console.error("Помилка завантаження корзини:", error);
+    }
 });
+
+function renderShoppingList(cart) {
+    const shoppingList = document.getElementById("shoppingList");
+    shoppingList.innerHTML = "";
+    cart.forEach((gameId) => {
+        const item = document.createElement("div");
+        item.textContent = `Гра ID: ${gameId}`;
+        shoppingList.appendChild(item);
+    });
+}
+
+
 
