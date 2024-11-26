@@ -31,7 +31,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
     try {
         await addUser({ username, password, cart: [] });
         alert("Успішна реєстрація!");
-        window.location.href = "../auth.html";
+        window.location.href = "./auth.html";
     } catch (error) {
         console.error("Помилка реєстрації:", error);
     }
