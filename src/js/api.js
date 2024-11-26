@@ -1,4 +1,4 @@
-const API_URL = "http://projectggg.byethost17.com/api/users.php";
+const API_URL = "https://projectggg.byethost17.com/api/users.php";
 
 // Отримати всіх користувачів
 export async function getUsers() {
