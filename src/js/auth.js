@@ -8,6 +8,9 @@ document.getElementById("loginForm").addEventListener("submit", async (e) => {
     const username = document.getElementById("username").value;
     const password = document.getElementById("password").value;
 
+    console.log("username:", username);
+    console.log("password:", password);
+
     try {
         const users = await getUsers();
         const user = users.find((u) => u.username === username && u.password === password);

@@ -1,4 +1,4 @@
-const API_URL = "http://projectggg.byethost17.com/api/users.php";
+const API_URL = "https://projectggg.byethost17.com/api/users.php";
 
 document.getElementById("registerForm").addEventListener("submit", async (e) => {
     e.preventDefault();
@@ -21,7 +21,7 @@ document.getElementById("registerForm").addEventListener("submit", async (e) => 
 
         if (response.ok) {
             alert("Реєстрація успішна! Перенаправляємо на сторінку входу.");
-            window.location.href = "../auth.html";
+            window.location.href = "auth.html";
         } else {
             const errorData = await response.json();
             alert(`Помилка реєстрації: ${errorData.message || "Невідома помилка"}`);
