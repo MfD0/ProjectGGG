@@ -1,0 +1,2 @@
+const s="https://projectggg.byethost17.com/api/users.php";async function e(){const t=await fetch(s);if(!t.ok)throw new Error("Не вдалося завантажити дані користувачів.");return await t.json()}async function n(t){const o=await fetch(s,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(t)});if(!o.ok)throw new Error("Не вдалося створити користувача.");return await o.json()}export{n as a,e as g};
+//# sourceMappingURL=api-Dd2_lA2D.js.map
