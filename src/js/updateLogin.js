@@ -12,7 +12,7 @@ function updateAuthUI() {
         authLink.addEventListener("click", logoutUser);
     } else {
         authLink.textContent = "LOGIN"; // Змінюємо текст на LOGIN
-        authLink.href = "./auth.html"; // Посилання на сторінку авторизації
+        authLink.href = "auth.html"; // Посилання на сторінку авторизації
         authImage.querySelector("img").src = "./img/login.svg"; // Відновлюємо іконку
         authLink.removeEventListener("click", logoutUser);
     }
