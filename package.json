@@ -18,6 +18,9 @@
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.4.5",
+    "mongodb": "^6.11.0",
+    "mongoose": "^8.8.3",
     "normalize.css": "^8.0.1",
     "vite-plugin-html-inject": "^1.1.2"
   }
