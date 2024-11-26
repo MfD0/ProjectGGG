@@ -1,0 +1,2 @@
+const e="http://projectggg.byethost17.com/api/users.php";async function n(){const t=await fetch(e);if(!t.ok)throw new Error("Не вдалося завантажити дані користувачів.");return await t.json()}async function s(t){const o=await fetch(e,{method:"POST",headers:{"Content-Type":"application/json"},body:JSON.stringify(t)});if(!o.ok)throw new Error("Не вдалося створити користувача.");return await o.json()}export{s as a,n as g};
+//# sourceMappingURL=api-GgpmmomU.js.map

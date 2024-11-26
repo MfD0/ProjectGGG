@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Авторизація</title>
+
+  <script type="module" crossorigin src="/ProjectGGG/auth.js"></script>
+  <link rel="modulepreload" crossorigin href="/ProjectGGG/assets/styles-BtAFSzR9.js">
+  <link rel="modulepreload" crossorigin href="/ProjectGGG/assets/api-GgpmmomU.js">
+  <link rel="stylesheet" crossorigin href="/ProjectGGG/assets/styles-ClMx17GE.css">
+  <link rel="stylesheet" crossorigin href="/ProjectGGG/assets/auth-D9egQ0RS.css">
+</head>
+
+<body>
+    <div class="auth-container">
+        <div class="back-arrow" onclick="window.history.back();"></div>
+        <h1>Вхід до системи</h1>
+        <form id="loginForm">
+            <label for="username">Логін:</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">Увійти</button>
+        </form>
+        <p>Немає акаунта? <a href="register.html">Створити акаунт</a></p>
+    </div>
+
+</body>
+
+</html>
