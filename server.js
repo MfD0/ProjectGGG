@@ -1,8 +1,10 @@
-const express = require('express');
-const mongoose = require('./src/config/db'); // Імпорт підключення до бази
-const User = require('./src/models/User'); // Імпорт моделі користувача
-const bodyParser = require('body-parser');
-require('dotenv').config();
+import express from 'express';
+import mongoose from './src/config/db.js'; // Імпорт підключення до бази
+import User from './src/models/User.js'; // Імпорт моделі користувача
+import bodyParser from 'body-parser';
+import dotenv from 'dotenv';
+
+dotenv.config(); // Завантаження змінних середовища
 
 const app = express();
 
