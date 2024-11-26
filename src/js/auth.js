@@ -1,5 +1,7 @@
 import { getUsers, addUser } from './api.js';
 
+console.log("auth.js");
+
 // Авторизація
 document.getElementById("loginForm").addEventListener("submit", async (e) => {
     e.preventDefault();
