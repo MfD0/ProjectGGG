@@ -3,6 +3,8 @@ function updateAuthUI() {
     const authImage = document.getElementById("authImage");
     const isLoggedIn = !!localStorage.getItem("activeUser");
 
+      console.log("update login");
+
     if (isLoggedIn) {
         authLink.textContent = "LOGOUT"; // Змінюємо текст на LOGOUT
         authLink.href = "#"; // Вимикаємо перехід
