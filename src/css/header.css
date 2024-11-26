@@ -147,3 +147,58 @@ header {
         gap: 24px;
     }
 }
+
+
+/* Загальний стиль для текстової кнопки LOGIN */
+.nav-list-auth-item .auth {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-text);
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    line-height: 32px;
+    /* Вирівнювання по висоті */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-list-auth-item .auth:hover {
+    background-color: var(--accent-color);
+    transform: translateY(-3px);
+    /* Плавний ефект при наведенні */
+}
+
+/* Стан активної кнопки LOGIN */
+.nav-list-auth-item .auth.active {
+    background-color: var(--accent-color);
+    color: var(--dark-bg);
+    transform: none;
+}
+
+/* Іконка LOGIN (прихована за замовчуванням) */
+.nav-list-auth-item .auth-image {
+    display: none;
+    /* Іконка не відображається на десктопі */
+    width: 25px;
+    cursor: pointer;
+    transition: filter 300ms;
+}
+
+/* Адаптив для мобільних пристроїв */
+@media screen and (max-width: 600px) {
+    .nav-list-auth-item .auth {
+        display: none;
+        /* Приховує текст кнопки на мобільних */
+    }
+
+    .nav-list-auth-item .auth-image {
+        display: block;
+        /* Показує іконку */
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-list-auth-item .auth-image {
+        display: block;
+    }
+}

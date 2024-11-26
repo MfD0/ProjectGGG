@@ -18,11 +18,22 @@ async function openModal(id) {
 
         modal.classList.add('open');
         document.body.style.overflow = 'hidden'; // Блокуємо прокрутку фону
-        updateShoppingListButton(isGameInShoppingList(game));
+
+        // Перевіряємо, чи користувач залогінений
+        const isLoggedIn = !!localStorage.getItem("activeUser");
+
+        if (isLoggedIn) {
+            const isInList = await isGameInShoppingList(game);
+            updateShoppingListButton(isInList);
+            addToShoppingListButton.style.display = "inline-block"; // Показуємо кнопку
+        } else {
+            addToShoppingListButton.style.display = "none"; // Ховаємо кнопку
+        }
     } catch (error) {
         console.log('Error loading game details', error);
     }
 }
+
 
 // Функція для відображення деталей гри у модальному вікні
 function renderGameDetails(game) {
@@ -42,13 +53,24 @@ function renderGameDetails(game) {
 
     // Встановлюємо посилання для Steam та трейлера
     steamLink.href = game.links.steam || '#';
-    trailerLink.href = game.links.Trailer || '#';
+    trailerLink.href = game.links.trailer || '#';
 }
 
-// Функція для перевірки, чи є гра в списку покупок
-function isGameInShoppingList(game) {
-    const shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
-    return shoppingList.some(item => item.id === game.id);
+// Функція для перевірки, чи є гра в списку покупок у активного користувача
+async function isGameInShoppingList(game) {
+    const activeUserId = localStorage.getItem('activeUser');
+    if (!activeUserId) {
+        alert("Ви повинні увійти до системи, щоб додавати ігри до корзини.");
+        window.location.href = 'auth.html';
+        return false;
+    }
+
+    const response = await fetch('../database/users.json');
+    const users = await response.json();
+    const user = users.find(user => user.id === parseInt(activeUserId));
+
+    if (!user) return false;
+    return user.cart.includes(game.id);
 }
 
 // Функція для оновлення кнопки "Add to Shopping List"
@@ -60,33 +82,57 @@ function updateShoppingListButton(isGameInList) {
     underButtonText.textContent = isGameInList ? 'Removed from shopping list' : 'Added to shopping list';
     addToShoppingListButton.classList.add('show-text');
 
-    // Видаляємо клас після 1.5 секунд, щоб текст зник
+    // Видаляємо клас після 4 секунд, щоб текст зник
     setTimeout(() => {
         addToShoppingListButton.classList.remove('show-text');
     }, 4000);
 }
 
-
-
 // Обробник для додавання/видалення гри зі списку покупок
-function handleShoppingListButtonClick(event) {
+async function handleShoppingListButtonClick(event) {
     event.stopPropagation();
-    let shoppingList = JSON.parse(localStorage.getItem('shoppingList')) || [];
-    const storedGame = JSON.parse(modal.getAttribute('data-game'));
 
-    const isGameInList = shoppingList.some(item => item.id === storedGame.id);
-
-    if (isGameInList) {
-        shoppingList = shoppingList.filter(item => item.id !== storedGame.id);
-    } else {
-        shoppingList.push(storedGame);
-        console.log(shoppingList);
+    const activeUserId = localStorage.getItem('activeUser');
+    if (!activeUserId) {
+        alert("Ви повинні увійти до системи, щоб додавати ігри до корзини.");
+        window.location.href = 'auth.html';
+        return;
     }
 
-    localStorage.setItem('shoppingList', JSON.stringify(shoppingList));
+    const response = await fetch('../database/users.json');
+    const users = await response.json();
+    const userIndex = users.findIndex(user => user.id === parseInt(activeUserId));
+
+    if (userIndex === -1) {
+        alert("Помилка: Користувач не знайдений.");
+        return;
+    }
+
+    const user = users[userIndex];
+    const game = JSON.parse(modal.getAttribute('data-game'));
+    const isGameInList = user.cart.includes(game.id);
+
+    if (isGameInList) {
+        user.cart = user.cart.filter(id => id !== game.id);
+    } else {
+        user.cart.push(game.id);
+    }
+
+    // Оновлюємо файл users.json
+    await saveUsersToJSON(users);
     updateShoppingListButton(!isGameInList);
 }
 
+// Функція для збереження змін у users.json
+async function saveUsersToJSON(users) {
+    await fetch('../database/users.json', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(users),
+    });
+}
+
+// Додаємо обробник до кнопки
 addToShoppingListButton.addEventListener('click', handleShoppingListButtonClick);
 
 // Функція для закриття модального вікна
