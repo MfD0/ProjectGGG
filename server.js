@@ -1,6 +1,6 @@
 const express = require('express');
-const mongoose = require('./config/db'); // Імпорт підключення до бази
-const User = require('./models/User'); // Імпорт моделі користувача
+const mongoose = require('./src/config/db'); // Імпорт підключення до бази
+const User = require('./src/models/User'); // Імпорт моделі користувача
 const bodyParser = require('body-parser');
 require('dotenv').config();
 
