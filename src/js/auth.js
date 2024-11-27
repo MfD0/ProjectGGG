@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // https://raw.githubusercontent.com/MfD0/ProjectGGG/main/src/database/users.json <= шлях для GitHub Pages
         // ../database/users.json <= шлях для локального
-        const USERS_JSON_URL = '../database/users.json';
+        const USERS_JSON_URL = 'https://raw.githubusercontent.com/MfD0/ProjectGGG/main/src/database/users.json';
 
         try {
             console.log("Запит на базу даних");
