@@ -1,4 +1,6 @@
-import { getGameByID } from './js/infoFromDB.js';
+import { getGameByID } from './infoFromDB.js';
+
+console.log("shlst.js start");
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("shoppingList.js is active");
@@ -83,3 +85,6 @@ function removeGameFromCart(gameId, cartKey, container) {
         document.querySelector(".empty-cart").classList.remove("hidden");
     }
 }
+
+
+console.log("shlst.js end");
