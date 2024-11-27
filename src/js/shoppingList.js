@@ -1,4 +1,3 @@
-import { getUsers } from './api.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
     const activeUserId = localStorage.getItem("activeUser");
@@ -20,18 +19,7 @@ document.addEventListener("DOMContentLoaded", async () => {
         blurOverlay.classList.add("hidden");
     }
 
-    try {
-        const users = await getUsers();
-        const user = users.find((u) => u.id === parseInt(activeUserId));
 
-        if (user && user.cart.length > 0) {
-            renderShoppingList(user.cart);
-        } else {
-            document.getElementById("shoppingList").textContent = "Ваша корзина порожня.";
-        }
-    } catch (error) {
-        console.error("Помилка завантаження корзини:", error);
-    }
 });
 
 function renderShoppingList(cart) {
