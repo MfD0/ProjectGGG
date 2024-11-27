@@ -131,6 +131,7 @@ window.addEventListener('resize', () => {
 
 // !!shopping list part
 
+console.log("shopping list part");
 import { getGameByID } from './js/infoFromDB.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
