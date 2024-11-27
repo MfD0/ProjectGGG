@@ -33,5 +33,5 @@ function b(t){return c.filter(e=>e.tags.includes(t))||"No Game found for this ca
                 <p class="game-category-author">${t.author}</p>
             </div>
         </div>
-    `,e}window.addEventListener("load",()=>{u.updateEffects()});window.addEventListener("resize",()=>{clearTimeout(window.resizeTimer),window.resizeTimer=setTimeout(()=>{u.updateEffects()},250)});export{P as a,b,T as c,v as g};
-//# sourceMappingURL=main-BEicqN6b.js.map
+    `,e}window.addEventListener("load",()=>{u.updateEffects()});window.addEventListener("resize",()=>{clearTimeout(window.resizeTimer),window.resizeTimer=setTimeout(()=>{u.updateEffects()},250)});export{v as a,P as b,b as c,T as g};
+//# sourceMappingURL=main-Do_Byl3y.js.map
