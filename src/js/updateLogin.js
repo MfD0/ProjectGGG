@@ -27,3 +27,4 @@ function logoutUser(event) {
 
 // Виклик функції при завантаженні сторінки
 document.addEventListener("DOMContentLoaded", updateAuthUI);
+window.addEventListener("load", updateAuthUI);
