@@ -7,6 +7,36 @@ const backdrop = modal.querySelector('.modal-body');
 const closeModalButton = modal.querySelector('.modal-close');
 const addToShoppingListButton = modal.querySelector('.add-to-list');
 const underButtonText = modal.querySelector('.under-btn-text');
+const hideCardButton = modal.querySelector('.hide-card');
+
+const HIDDEN_CARDS_KEY = 'hiddenCards';
+
+// Завантажуємо приховані картки з localStorage
+function getHiddenCards() {
+    return JSON.parse(localStorage.getItem(HIDDEN_CARDS_KEY)) || [];
+}
+
+// Зберігаємо приховані картки в localStorage
+function saveHiddenCards(hiddenCards) {
+    localStorage.setItem(HIDDEN_CARDS_KEY, JSON.stringify(hiddenCards));
+}
+
+// Оновлюємо статус картки
+function toggleHiddenStatus(gameId) {
+    const hiddenCards = getHiddenCards();
+
+    // Якщо картка вже прихована, видаляємо її зі списку
+    if (hiddenCards.includes(gameId)) {
+        const updatedHiddenCards = hiddenCards.filter((id) => id !== gameId);
+        saveHiddenCards(updatedHiddenCards);
+        return false; // Повертаємо статус "видимий"
+    }
+
+    // Інакше додаємо картку до списку прихованих
+    hiddenCards.push(gameId);
+    saveHiddenCards(hiddenCards);
+    return true; // Повертаємо статус "прихований"
+}
 
 async function openModal(id) {
     try {
@@ -23,11 +53,21 @@ async function openModal(id) {
             const isInList = isGameInShoppingList(game);
             updateShoppingListButton(isInList);
             addToShoppingListButton.style.display = "inline-block";
+
+            if (activeUser.role === 'admin') {
+                hideCardButton.textContent = "Toggle Hidden Status"; // Для admin змінюємо текст
+                hideCardButton.style.display = "inline-block";
+            } else {
+                hideCardButton.textContent = "Hide this card"; // Для user залишаємо звичайний текст
+                hideCardButton.style.display = "inline-block";
+            }
         } else {
             addToShoppingListButton.style.display = "none";
+            hideCardButton.textContent = "Hide this card";
+            hideCardButton.style.display = "inline-block";
         }
     } catch (error) {
-        console.log('Error loading game details', error);
+        console.error('Error loading game details:', error);
     }
 }
 
@@ -69,7 +109,7 @@ function handleShoppingListButtonClick(event) {
 
     const activeUser = JSON.parse(localStorage.getItem('activeUser'));
     if (!activeUser) {
-        alert("Ви повинні увійти до системи, щоб додавати ігри до корзини.");
+        alert("You must log in to add games to your shopping list.");
         window.location.href = 'auth.html';
         return;
     }
@@ -90,7 +130,29 @@ function handleShoppingListButtonClick(event) {
     updateShoppingListButton(!isGameInList);
 }
 
+function handleHideCardClick() {
+    const game = JSON.parse(modal.getAttribute('data-game'));
+    const activeUser = JSON.parse(localStorage.getItem("activeUser"));
+
+    if (activeUser && activeUser.role === 'admin') {
+        // Адміністратор змінює статус
+        const isNowHidden = toggleHiddenStatus(game.id);
+        alert(`The game "${game.title}" is now ${isNowHidden ? "hidden" : "visible"} for users.`);
+    } else {
+        // Звичайний користувач або неавторизований
+        toggleHiddenStatus(game.id);
+        const gameCard = document.getElementById(game.id);
+        if (gameCard) {
+            gameCard.style.display = 'none';
+            alert(`The game "${game.title}" has been hidden.`);
+        }
+    }
+
+    closeModal();
+}
+
 addToShoppingListButton.addEventListener('click', handleShoppingListButtonClick);
+hideCardButton.addEventListener('click', handleHideCardClick);
 
 function closeModal() {
     modal.classList.remove('open');

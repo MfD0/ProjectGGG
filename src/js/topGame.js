@@ -1,12 +1,22 @@
-import { getAllCategories, getBooksByTags, getGameByID } from './infoFromDB.js';
+import { getAllCategories, getBooksByTags } from './infoFromDB.js';
+
+const HIDDEN_CARDS_KEY = 'hiddenCards';
+
+// Завантажуємо приховані картки з localStorage
+function getHiddenCards() {
+    return JSON.parse(localStorage.getItem(HIDDEN_CARDS_KEY)) || [];
+}
+
+// Зберігаємо приховані картки в localStorage
+function saveHiddenCards(hiddenCards) {
+    localStorage.setItem(HIDDEN_CARDS_KEY, JSON.stringify(hiddenCards));
+}
 
 // Витягаємо всі категорії з бази даних
 const categories = getAllCategories();
-
-// Об'єкт, що містить всі ігри, розбиті за категоріями
 const topGames = getBooksByTags(categories);
 
-// Функція для створення HTML для карточки гри
+// Функція для створення HTML для картки гри
 function createGameCard(game) {
     return `
     <li id="${game.id}" class="listener" onclick="openModal('${game.id}')">
@@ -27,27 +37,40 @@ function createGameCard(game) {
 // Функція для завантаження ігор у відповідну категорію
 function loadGames(categoryName, games) {
     const categoryElement = document.querySelector(`.game-category[data-category="${categoryName}"]`);
-    if (categoryElement) {
-        const loader = categoryElement.querySelector('.mask');
-        const gamesHTML = games
-            .map((game) => createGameCard(game))
-            .join('');
+    if (!categoryElement) {
+        console.warn(`Category element not found: ${categoryName}`);
+        return;
+    }
 
-        const gamesListElement = categoryElement.querySelector('.games-category-list');
+    const loader = categoryElement.querySelector('.mask');
+
+    // Отримуємо список прихованих карток
+    const hiddenCards = getHiddenCards();
+
+    // Визначаємо роль користувача
+    const activeUser = JSON.parse(localStorage.getItem("activeUser"));
+    const isAdmin = activeUser && activeUser.role === 'admin';
+
+    // Фільтруємо ігри для звичайних користувачів, адміністратори бачать всі картки
+    const gamesHTML = games
+        .filter((game) => isAdmin || !hiddenCards.includes(game.id))
+        .map((game) => createGameCard(game))
+        .join('');
+
+    const gamesListElement = categoryElement.querySelector('.games-category-list');
+    if (gamesListElement) {
         gamesListElement.innerHTML = gamesHTML;
-        // Приховуємо лоадер, коли карточки завантажені
+    }
+
+    if (loader) {
         loader.style.display = 'none';
     }
 }
 
-// Функція для отримання та відображення ігор по категоріям
+// Функція для отримання та відображення ігор по категоріях
 export function fetchAndDisplayGames() {
-    // Перебираємо всі категорії у topGames
     Object.keys(topGames).forEach(categoryName => {
-        // Отримуємо список ігор для поточної категорії
         const games = topGames[categoryName];
-
-        // Завантажуємо ігри у відповідний контейнер для цієї категорії
         loadGames(categoryName, games);
     });
 }
@@ -80,8 +103,9 @@ function createCategoryContainer(categoryName) {
     button.classList.add('see-more');
     button.textContent = 'SEE MORE';
 
-    // Встановлення обробника події через addEventListener
-    button.addEventListener('click', scrollFuc);
+    button.addEventListener('click', (event) => {
+        scrollFuc(event, categoryName);
+    });
 
     container.appendChild(titleDiv);
     container.appendChild(loaderDiv);
@@ -92,9 +116,8 @@ function createCategoryContainer(categoryName) {
 }
 
 // Функція для обробки кнопки "SEE MORE"
-function scrollFuc(event) {
-    const button = event.target; 
-    const categoryName = button.id.replace(/_/g, ' ');
+function scrollFuc(event, categoryName) {
+    const button = event.target;
 
     // Знаходимо елемент у блоці Aside
     const categoryItems = document.querySelectorAll('.category-item');
@@ -118,20 +141,28 @@ function scrollFuc(event) {
     glowManager.updateEffects();
 }
 
-
 // Функція для отримання категорій та додавання контейнерів до DOM
 export function fetchAndDisplayCategories() {
     const topGamesList = document.querySelector('.top-games-list');
 
+    if (!topGamesList) {
+        console.error("Top games list container not found!");
+        return;
+    }
+
     // Додаємо контейнер для кожної категорії
     categories.forEach(category => {
-        const categoryContainer = createCategoryContainer(category); // Використовуємо категорію напряму
+        const categoryContainer = createCategoryContainer(category);
         topGamesList.appendChild(categoryContainer);
     });
 }
 
 // Виклик функції при завантаженні сторінки
 document.addEventListener('DOMContentLoaded', () => {
-    fetchAndDisplayCategories();
-    fetchAndDisplayGames();
+    try {
+        fetchAndDisplayCategories();
+        fetchAndDisplayGames();
+    } catch (error) {
+        console.error('Error loading games or categories:', error);
+    }
 });
