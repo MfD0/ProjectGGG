@@ -1,6 +1,7 @@
 import { getGameByID } from './infoFromDB.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
+    console.log("shoppingList.js is active");
     const activeUser = JSON.parse(localStorage.getItem("activeUser")); // Отримуємо активного користувача
     const blurOverlay = document.getElementById("blur-overlay");
     const redirectLoginButton = document.getElementById("redirect-login");
