@@ -9,10 +9,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
         try {
             console.log("Запит на базу даних");
-            const response = await fetch('https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/database/users.js');
+            const response = await fetch('https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/database/users.json');
             
             console.log("тіло try");
-            // https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/database/users.js <= шлях для GitHub Pages
+            // https://raw.githubusercontent.com/MfD0/ProjectGGG/refs/heads/main/src/database/users.json <= шлях для GitHub Pages
             // ../database/users.json <= шлях для локального
             const users = await response.json();
 
