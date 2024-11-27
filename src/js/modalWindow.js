@@ -7,7 +7,7 @@ const backdrop = modal.querySelector('.modal-body');
 const closeModalButton = modal.querySelector('.modal-close');
 const addToShoppingListButton = modal.querySelector('.add-to-list');
 const underButtonText = modal.querySelector('.under-btn-text');
-const hideCardButton = modal.querySelector('.hide-card');
+const hideCardButton = modal.querySelector('.hide-card'); // Кнопка приховування
 
 const HIDDEN_CARDS_KEY = 'hiddenCards';
 
@@ -54,17 +54,15 @@ async function openModal(id) {
             updateShoppingListButton(isInList);
             addToShoppingListButton.style.display = "inline-block";
 
+            // Відображаємо кнопку тільки для адмінів
             if (activeUser.role === 'admin') {
-                hideCardButton.textContent = "Toggle Hidden Status"; // Для admin змінюємо текст
                 hideCardButton.style.display = "inline-block";
             } else {
-                hideCardButton.textContent = "Hide this card"; // Для user залишаємо звичайний текст
-                hideCardButton.style.display = "inline-block";
+                hideCardButton.style.display = "none";
             }
         } else {
             addToShoppingListButton.style.display = "none";
-            hideCardButton.textContent = "Hide this card";
-            hideCardButton.style.display = "inline-block";
+            hideCardButton.style.display = "none"; // Приховуємо кнопку для неавторизованих
         }
     } catch (error) {
         console.error('Error loading game details:', error);
@@ -138,17 +136,7 @@ function handleHideCardClick() {
         // Адміністратор змінює статус
         const isNowHidden = toggleHiddenStatus(game.id);
         alert(`The game "${game.title}" is now ${isNowHidden ? "hidden" : "visible"} for users.`);
-    } else {
-        // Звичайний користувач або неавторизований
-        toggleHiddenStatus(game.id);
-        const gameCard = document.getElementById(game.id);
-        if (gameCard) {
-            gameCard.style.display = 'none';
-            alert(`The game "${game.title}" has been hidden.`);
-        }
     }
-
-    closeModal();
 }
 
 addToShoppingListButton.addEventListener('click', handleShoppingListButtonClick);
