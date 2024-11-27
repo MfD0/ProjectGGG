@@ -8,12 +8,12 @@ function updateAuthUI() {
     if (isLoggedIn) {
         authLink.textContent = "LOGOUT"; // Змінюємо текст на LOGOUT
         authLink.href = "#"; // Вимикаємо перехід
-        authImage.querySelector("img").src = "./img/logout.svg"; // Змінюємо іконку
+        //! authImage.querySelector("img").src = "./img/logout.svg"; // Змінюємо іконку
         authLink.addEventListener("click", logoutUser);
     } else {
         authLink.textContent = "LOGIN"; // Змінюємо текст на LOGIN
         authLink.href = "./auth.html"; // Посилання на сторінку авторизації
-        authImage.querySelector("img").src = "./img/login.svg"; // Відновлюємо іконку
+        //! authImage.querySelector("img").src = "./img/login.svg"; // Відновлюємо іконку
         authLink.removeEventListener("click", logoutUser);
     }
 }
