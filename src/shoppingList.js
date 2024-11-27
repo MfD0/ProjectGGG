@@ -1,4 +1,4 @@
-import { getGameByID } from './infoFromDB.js';
+import { getGameByID } from './js/infoFromDB.js';
 
 document.addEventListener("DOMContentLoaded", async () => {
     console.log("shoppingList.js is active");
