@@ -1,8 +1,12 @@
 [
     {
-        "id": 1,
         "username": "admin",
-        "password": "admin123",
-        "cart": []
+        "password": "adminpassword",
+        "role": "admin"
+    },
+    {
+        "username": "user1",
+        "password": "user1password",
+        "role": "user"
     }
 ]
