@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const user = users.find(u => u.username === username && u.password === password);
 
             if (user) {
-                sessionStorage.setItem('loggedInUser', JSON.stringify(user));
+                localStorage.setItem('activeUser', JSON.stringify(user));
                 window.location.href = 'index.html';
             } else {
                 alert('Невірний логін або пароль');
