@@ -198,3 +198,20 @@
     color: orange;
     font-size: 20px;
 }
+/* Кнопка видалення гри */
+.hide-card {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #ffc107;
+    color: #000;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hide-card:hover {
+    background-color: #e0a800;
+}
