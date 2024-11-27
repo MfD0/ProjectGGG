@@ -100,3 +100,67 @@
 .login-message button:hover {
   background-color: #0056b3;
 }
+
+
+
+/* !! */
+
+
+.shopping-list-item {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 15px;
+  margin-bottom: 10px;
+  background-color: #1e1e1e;
+  color: white;
+}
+
+.game-image-container {
+  flex-shrink: 0;
+  margin-right: 15px;
+}
+
+.shopping-list-image {
+  width: 100px;
+  height: auto;
+  border-radius: 5px;
+}
+
+.shopping-list-details {
+  flex-grow: 1;
+}
+
+.shopping-list-title {
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.shopping-list-author {
+  font-size: 14px;
+  color: #aaa;
+  margin: 0 0 10px 0;
+}
+
+.shopping-list-description {
+  font-size: 14px;
+  color: #ddd;
+}
+
+.remove-game-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: transparent;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.remove-game-btn:hover {
+  color: #f00;
+}
